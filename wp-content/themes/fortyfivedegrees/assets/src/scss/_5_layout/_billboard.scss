@@ -1,0 +1,169 @@
+/* BILLBOARDS */
+
+/* GENERAL BILLBOARD STYLE FOR WHITE AND BLACK */
+.billboard {
+    max-width: 775px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3em;
+        margin: 0;
+        padding: 0 em(5px) em(20px) em(5px);
+        animation-duration: 0.9s;
+        animation-name: fadeAndScale;
+        animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+    }
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5em;
+        margin: 0;
+        padding: em(20px) em(5px) 0 em(5px);
+        animation-duration: 0.9s;
+        animation-name: fadeAndScale;
+        animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+    }
+
+    @keyframes fadeAndScale {
+        from {
+            opacity: 0;
+            transform: scale (0.9, 0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+
+    p {
+        margin: 0;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 1.25em;
+        padding: 0 em(5px) 0 em(5px);
+    }
+
+    @include breakpoint (mobile) {
+        h1 {
+            font-size: 4.5em;
+            padding-bottom: em(10px);
+        }
+
+        h2 {
+            font-size: 3.5em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+
+    @include breakpoint (small) {
+        h1 {
+            font-size: 5em;
+        }
+
+        h2 {
+            font-size: 4em;
+        }
+    }
+}
+
+/* BILLBOARD WITH BLACK BACKGROUND */
+.billboard_black_wrapper {
+    background-color: $black;
+    width: 100%;
+}
+
+.billboard_black {
+    background-color: $black;
+    h1,
+    h2 {
+        color: $bright_teal;
+    }
+    p {
+        color: $white;
+    }
+}
+
+/*  BILLBOARD WITH WHITE BACKGROUND */
+.billboard_white {
+    background-color: $white;
+    h1,
+    h2,
+    p {
+        color: $black;
+    }
+}
+
+/* BILLBOARD WITH TEAL BACKGROUND */
+.billboard_teal {
+    background-color: $dark-teal;
+    h2,
+    p {
+        color: $white;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3em;
+        margin: 0;
+        padding: 0 em(5px) em(20px) em(5px);
+    }
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5em;
+        margin: 0;
+        padding: em(20px) em(5px) 0 em(5px);
+    }
+
+    p {
+        margin: 0;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 1.25em;
+        padding: 0 em(5px) 0 em(5px);
+    }
+
+    @include breakpoint (mobile) {
+        h1 {
+            font-size: 4.5em;
+            padding-bottom: em(10px);/*
+            margin-top: em(-5px);
+            */
+        }
+
+        h2 {
+            font-size: 3.5em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+
+    @include breakpoint (small) {
+        h1 {
+            font-size: 5em;
+        }
+
+        h2 {
+            font-size: 4em;
+        }
+    }
+}
+
+/* EXTRAS FOR BILLBOARDS */
+.p_space {
+    padding-bottom: em(50px);
+}

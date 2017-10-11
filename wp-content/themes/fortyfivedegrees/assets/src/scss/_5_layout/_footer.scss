@@ -1,0 +1,124 @@
+
+/* #FOOTER */
+.footer {
+    background-color: $black;
+
+    h2,
+    h4 {
+        color: $white;
+        text-align: center;
+    }
+
+    h2 {
+        padding: 3em 0 1em 0;
+        font-size: 3em;
+    }
+
+    /* ::after on h2 creates the line from answers.squarespace.com */
+
+    h2::after {
+        background: none repeat scroll 0 0 $bright_teal;
+        bottom: -0.5em;
+        content: "";
+        display: block;
+        height: 0.125em;
+        position: relative;
+        width: 2.25em;
+        margin: auto;
+    }
+
+    p {
+        text-align: center;
+        color: $white;
+        font-size: 1.5em;
+        margin: 0;
+        line-height: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+        padding-top: 2em;
+    }
+
+    .icon {
+        fill: $white;
+        height: 3em;
+        display: block;
+        margin: auto;
+        padding: 3em 0 2em 0;
+    }
+
+    .icon:hover {
+        fill: $bright_teal;
+    }
+
+    p {
+        text-align: center;
+        color: $white;
+    }
+
+    .copyright {
+        color: white;
+        font-size: 0.75em;
+        padding: 2em 0 2em 0;
+    }
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0 6em 0;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: column;
+}
+
+@include breakpoint (large-mobile) {
+    .flex-form {
+        flex-direction: row;
+    }
+}
+
+input[type=text] {
+    background-color: $black;
+    color: $white;
+    font-size: 1em;
+    border: solid 0.125em $bright_teal;
+    padding: em(20px) 0 em(20px) em(10px);
+    margin-bottom: 20px;
+}
+
+input:focus,
+input:hover {
+    background-color: $white;
+}
+
+input[type=submit] {
+    background-color: $red;
+    color: $white;
+    font-size: 1em;
+    padding: em(20px) em(20px);
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus {
+    border: solid $red 3px;
+    background: $black;
+}
+
+@include breakpoint (large-mobile) {
+    input[type=text] {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    input[type=submit] {
+        padding: 0 em(20px) 0 em(20px);
+    }
+}
+
+.footer_pullup {
+    margin-top: 0;
+}

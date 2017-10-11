@@ -1,0 +1,135 @@
+
+/*  #HEADER */
+.hide {
+    display: none;
+}
+
+/*  #NAV */
+.nav {
+    display: none;
+
+    @include breakpoint (portrait) {
+        display: block;
+    }
+
+    z-index: map-get($zindex, nav);
+    background: $black;
+    position: sticky;
+    top: 0;
+
+    ul {
+        @include no-bullets;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 0 2em 0;
+
+        li {
+            flex: 1;
+            text-align: center;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                font-family: $roboto;
+
+                &:hover {
+                    color: $bright_teal;
+                }
+            }
+        }
+    }
+}
+
+.nav ul li.selected a {
+    color: $bright_teal;
+}
+
+/* HAMBURGER NAVIGATION */
+.hamburger_stick {
+    position: sticky;
+    top: 0;
+    padding-top: em(50px);
+    margin-bottom: 0;
+    background-color: $black;
+    z-index: map-get($zindex, nav);
+
+    h2 {
+        color: $light-grey;
+        text-align: center;
+        margin-top: em(-30px);
+        margin-bottom: 0;
+        padding-bottom: em(10px);
+    }
+
+    @include breakpoint (portrait) {
+        padding-top: 0;
+    }
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: map-get($zindex, hamburger);
+
+    svg {
+        width: 30px;
+        height: 30px;
+        fill: $light-grey;
+    }
+
+    @include breakpoint (portrait) {
+        display: none;
+    }
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    transition: bottom 0.25s ease-in-out, top 0.25s ease-in-out;
+    z-index: map-get($zindex, hamburger);
+
+    &.open {
+        bottom: 0;
+        top: 0;
+    }
+
+    &__close {
+        position: absolute;
+        right: em(10px);
+        top: em(45px);
+        z-index: map-get($zindex, hamburger);
+
+        a {
+            color: $dark-grey;
+            text-decoration: none;
+            font-size: 3em;
+        }
+    }
+
+    ul {
+        @include no-bullets;
+
+        li {
+            padding-bottom: em(20px);
+            padding-top: em(20px);
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                font-family: $roboto;
+                font-size: 1.25em;
+                color: $dark-grey;
+                padding-left: em(20px);
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+/* CARDS */
+
+/* 3 column cards */
+.card-three-grid-wrapper {
+    display: grid;
+    flex: 1;
+    grid-gap: em(10px);
+    padding: 0 0 em(50px) 0;
+}
+
+@include breakpoint (portrait) {
+    .card-three-grid-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.card-three {
+    display: flex;
+    flex-direction: column;
+    padding: em(20px);
+    background: $white;
+    color: $black;
+
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+
+    p {
+        padding-left: em(10px);
+    }
+
+    a {
+        align-self: flex-end;
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+.card-three__image {
+    text-align: center;
+    width: 100%;
+}
+
+.card-three__image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-three__read-more {
+    align-self: flex-end;
+    margin-top: auto;
+
+    button {
+        width: 100%;
+    }
+}
+
+
+/* two column cards */
+.card-two-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@include breakpoint (larger-mobile) {
+    .card-two-wrapper {
+        flex-direction: row;
+    }
+
+    .card-two {
+        margin-right: em(20px);
+    }
+
+    .card-two:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.card-two {
+    background-color: $white;
+    border: em(1px) solid $light-grey;
+    flex: 1;
+    margin-bottom: em(20px);
+    color: $white;
+    padding-bottom: em(20px);
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        color: $white;
+        background-color: $dark-teal;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0;
+        padding: em(10px) 0 em(10px) 0;
+        font-size: 2em;
+    }
+
+    p {
+        color: $black;
+        padding: 0 em(20px) em(10px) em(20px);
+    }
+
+    a {
+        align-self: flex-end;
+        margin-top: auto;
+    }
+}
+
+.card-two__learn-more {
+    margin: 0 auto;
+
+}

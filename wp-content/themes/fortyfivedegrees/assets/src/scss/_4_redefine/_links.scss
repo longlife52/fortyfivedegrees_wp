@@ -1,0 +1,14 @@
+/* #LINKS */
+.link_white {
+    a {
+        color: $white;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.links p {
+    margin: 0;
+}

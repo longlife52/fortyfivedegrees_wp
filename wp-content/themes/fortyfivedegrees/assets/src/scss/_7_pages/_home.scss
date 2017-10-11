@@ -1,0 +1,170 @@
+/* index.html STYLES */
+
+/* LOGO ON HOMEPAGE FOR MOIBILE DISPLAY */
+.logo_homepage_mobile {
+    margin: auto;
+    padding-top: em(50px);
+
+    @include breakpoint (portrait) {
+        display: none;
+    }
+}
+
+.titles_homepage_mobile h2 {
+    padding-top: 0;
+}
+
+.image_full {
+    width: 100%;
+    height: auto;
+}
+
+.hero_call_to_action {
+    background: $dark-grey;
+    display: flex;
+    align-items: center;
+    margin-top: em(-5px);
+    flex-direction: column;
+
+    h2 {
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        padding: em(10px) em(20px) 0 em(20px);
+        font-size: 2em;
+    }
+
+    @include breakpoint (larger-mobile) {
+        flex-direction: row;
+
+        h2 {
+            padding: em(20px) em(20px) em(20px) em(20px);
+        }
+    }
+
+    p {
+        color: $white;
+    }
+}
+
+.services-style {
+    background-color: $light-grey;
+    padding: em(75px) em(50px) em(75px) em(50px);
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    @include breakpoint (larger-mobile) {
+        h2 {
+            font-size: 2em;
+        }
+    }
+
+    @include breakpoint (portrait) {
+        h2 {
+            font-size: 3em;
+        }
+    }
+}
+
+.services-pad {
+    padding-top: em(40px);
+}
+
+.blog_preview {
+    h2 {
+        color: $black;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3em;
+        padding-top: em(20px);
+    }
+}
+
+/* owl carousel styles */
+.owl-dots {
+    display: none;
+
+    @include breakpoint (small) {
+        display: block;
+        float: left;
+        margin-left: em(30px);
+    }
+}
+
+.carousel_wrapper {
+    background-color: $dark-grey;
+    padding: em(20px);
+
+    @include breakpoint (small) {
+        display: grid;
+        grid-template-columns: 300px auto;
+    }
+}
+
+.carousel_quote_mark {
+    display: none;
+
+    @include breakpoint (small) {
+        display: block;
+        margin-top: em(-70px);
+    }
+}
+
+.carousel_space {
+    background: $white;
+    color: red;
+
+    p,
+    h3 {
+        margin: 0;
+    }
+
+    h3 {
+        padding-left: em(30px);
+    }
+
+    @include breakpoint (small) {
+        margin: em(50px);
+    }
+}
+
+.testimonial_words {
+    font-size: 1.5em;
+    color: $dark-grey;
+    padding-top: em(30px);
+}
+
+.testimonial_content p {
+    padding-left: em(20px);
+    padding-right: em(20px);
+}
+
+/* ::after on h2 creates the line from answers.squarespace.com */
+.testimonial_content p:first-child::after {
+    background: none repeat scroll 0 0 $red;
+    bottom: -0.5em;
+    content: "";
+    display: block;
+    height: 0.125em;
+    position: relative;
+    width: 2.25em;
+    text-align: left;
+    margin-bottom: em(20px);
+}
+
+.testimonial_name {
+    padding-top: em(10px);
+    color: $dark-grey;
+    font-weight: bold;
+}
+
+.testimonial_title {
+    color: $dark-teal;
+    padding-bottom: em(30px);
+    font-weight: lighter;
+}
