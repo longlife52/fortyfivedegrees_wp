@@ -20,7 +20,7 @@ get_header(); ?>
 
     <!-- quote mark -->
               <div class="carousel_quote_mark">
-                  <img class="image_full" src="assets/dist/img/quote.png" alt="quote mark" title="quote mark">
+                  <img class="image_full" src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.png" alt="quote mark" title="quote mark">
               </div>
     <!-- owl carousel -->
     <div class="owl-carousel owl-theme owl-loaded carousel_space">

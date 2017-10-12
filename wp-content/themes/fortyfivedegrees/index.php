@@ -1,18 +1,5 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
-
-			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
-
-			<?php get_template_part('partials/loop'); ?>
-
-			<?php get_template_part('partials/pagination'); ?>
-
-		</section>
-		<!-- /section -->
-
     <!-- BILLBOARD -->
     <div class="billboard_black_wrapper">
         <div class="billboard_black billboard">
@@ -27,7 +14,7 @@
     <div class="blog_list">
         <div class="blog_list_item">
             <div class="blog_list_img">
-                <img src="assets/dist/img/clarity_large.jpg" alt="" title="">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/clarity_large.jpg" alt="" title="">
             </div>
 
             <div class="blog_list_text">
@@ -44,7 +31,7 @@
 
         <div class="blog_list_item">
             <div class="blog_list_img">
-                <img src="assets/dist/img/horse_large.jpg" alt="" title="">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/horse_large.jpg" alt="" title="">
             </div>
 
             <div class="blog_list_text">
@@ -61,7 +48,7 @@
 
         <div class="blog_list_item">
             <div class="blog_list_img">
-                <img src="assets/dist/img/growth_large.jpg" alt="" title="">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/growth_large.jpg" alt="" title="">
             </div>
 
             <div class="blog_list_text">
@@ -84,7 +71,5 @@
             <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_white">Blog Archive</p></a>
         </div>
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -97,7 +97,8 @@ function html5blank_header_scripts()
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
         wp_register_script('ahha-js', get_template_directory_uri() . '/assets/dist/js/production.js', array('jquery'), '1.0.0', true); // Custom scripts
         wp_register_script('modernizer-js', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js', array('jquery'), '1.0.0', true); // Custom scripts
-        wp_enqueue_script('modernizer-js' , 'ahha-js'); // Enqueue it!
+        wp_enqueue_script('modernizer-js'); // Enqueue it!
+        wp_enqueue_script('ahha-js'); // Enqueue it!
     }
 }
 
@@ -105,10 +106,10 @@ function html5blank_header_scripts()
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
 {
-    // if (is_page('pagenamehere')) {
-    //     wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery', 'ahha-js'), '1.0.0'); // Conditional script(s)
-    //     wp_enqueue_script('scriptname'); // Enqueue it!
-    // }
+   //if (is_page('home' 'about')) {
+       //wp_register_script('carousel', get_template_directory_uri() . '/js/scriptname.js', array('jquery', //'ahha-js'), '1.0.0'); // Conditional script(s)
+      //  wp_enqueue_script('carousel'); // Enqueue it!
+     //}
 }
 
 // Load HTML5 Blank styles
