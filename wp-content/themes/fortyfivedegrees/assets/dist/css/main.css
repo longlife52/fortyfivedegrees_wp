@@ -1433,9 +1433,9 @@ input[type=submit]:focus {
 .footer_pullup {
   margin-top: 0; }
 
-.policies {
+.legal {
   padding-bottom: 5em; }
-  .policies ul {
+  .legal ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1451,14 +1451,22 @@ input[type=submit]:focus {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .policies ul li {
+    .legal ul li {
       text-align: center;
-      padding-right: 1em; }
-      .policies ul li a {
+      /* last-child + after code adds pipe between words */ }
+      .legal ul li:last-child:after {
+        content: ''; }
+      .legal ul li:after {
+        content: '|';
+        color: white;
+        font-size: 1.5em;
+        float: right;
+        margin: 0 0.3125em; }
+      .legal ul li a {
         color: #fafafa;
         text-decoration: none;
         font-family: "Roboto Condensed"; }
-        .policies ul li a:hover {
+        .legal ul li a:hover {
           color: #66fcf1; }
 
 /* CARDS */

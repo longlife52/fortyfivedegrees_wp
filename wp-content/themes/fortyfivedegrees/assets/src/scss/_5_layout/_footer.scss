@@ -123,7 +123,7 @@ input[type=submit]:focus {
     margin-top: 0;
 }
 
-.policies {
+.legal {
     padding-bottom: 5em;
 
     ul {
@@ -134,14 +134,28 @@ input[type=submit]:focus {
 
       li {
         text-align: center;
-        padding-right: 1em;
-        a {
-          color: $white;
-          text-decoration: none;
-          font-family: $roboto;
 
-          &:hover{
-            color: $bright_teal;
+/* last-child + after code adds pipe between words */
+        &:last-child:after {
+          content: '';
+        }
+
+        &:after {
+          content: '|';
+          color: white;
+          font-size: 1.5em;
+          float: right;
+          margin: 0 em(5px);
+        }
+
+          a {
+            color: $white;
+            text-decoration: none;
+            font-family: $roboto;
+
+            &:hover{
+              color: $bright_teal;
+
           }
         }
       }

@@ -31,7 +31,7 @@
 
             <p class="copyright">&copy2017 45 Degrees</p>
 
-            <div class="policies">
+            <div class="legal">
               <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms and Conditions</a></li>
