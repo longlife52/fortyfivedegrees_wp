@@ -59,8 +59,8 @@
 
     .copyright {
         color: white;
-        font-size: 0.75em;
-        padding: 2em 0 2em 0;
+        font-size: 1em;
+        padding: 2em 0 1em 0;
     }
 }
 
@@ -121,4 +121,29 @@ input[type=submit]:focus {
 
 .footer_pullup {
     margin-top: 0;
+}
+
+.policies {
+    padding-bottom: 5em;
+
+    ul {
+      @include no-bullets;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        text-align: center;
+        padding-right: 1em;
+        a {
+          color: $white;
+          text-decoration: none;
+          font-family: $roboto;
+
+          &:hover{
+            color: $bright_teal;
+          }
+        }
+      }
+    }
 }

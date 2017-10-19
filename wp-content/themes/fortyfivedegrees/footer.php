@@ -29,7 +29,15 @@
                 <svg class="icon icon-facebook hvr-wobble-to-top-right"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg>
             </a>
 
-            <p class="copyright">All Rights Reserved. Terms and Conditions Apply. &copy2017</p>
+            <p class="copyright">&copy2017 45 Degrees</p>
+
+            <div class="policies">
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Disclaimers</a></li>
+              </ul>
+            </div>
 
         </footer>
 
