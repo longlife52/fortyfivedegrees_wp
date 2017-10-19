@@ -23,17 +23,7 @@
     </div>
 
     <div class="blog_copy">
-        <h3>1. Focus First</h3>
-            <p>A life coaching tip is to begin with a blank journal, a page which symbolizes a brand new blank day.</p>
-            <p>Jot down rambling thoughts to help you see what's most important in the moment. Then jot down your daily "to do" list. Keep it manageable. No more than 5 items for one day.</p>
-
-        <h3>2. Move</h3>
-            <p>Get out of your head and into your body. Sometimes we think too much. When you find yourself under stress, get up and move. Take a walk. Get down on the floor and do 10 sit-ups. Play music and dance. </p>
-            <p>We are created with body, mind, and spirit. In our hectic lives, it's common to spend a vast amount of time in our mind. Use your body. Feel better.</p>
-
-        <h3>3. Say No</h3>
-            <p>Whenever you say "yes" to something, you're saying "no" to something else. Stop being all things to all people. Make decisions that algin with your passion. You'll find enery and cheerfulness to profoundly impact your career, your relationships, adn your owne well-being.</p>
-            <p>We only have 24 hours in a day. Some of those need to be used for sleeping. Say "no" to things that are eating up your time and not making a difference in your life.</p>
+      <?php the_content() ?>
     </div> <!-- close of body copy -->
 </div> <!--close of blog content-->
 
