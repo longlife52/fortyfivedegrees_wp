@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <!-- BILLBOARD -->
 <div class="billboard_black_wrapper">
     <div class="billboard_black billboard">
         <div class="blog_title">
-            <h1>3 Ways to Increase Clarity</h1>
+            <h1><?php the_title(); ?></h1>
             <h2>problem solving your work and personal life </h2>
         </div>
     </div> <!--closer for .billboard_black -->
@@ -51,5 +53,7 @@
         <a href=""><p>A Simple Guide for Finding the Path </p></a>
     </div>
 </div>
+
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
