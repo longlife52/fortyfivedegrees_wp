@@ -34,7 +34,7 @@
             <div class="legal">
               <ul>
                 <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Terms + Conditions</a></li>
                 <li><a href="#">Disclaimers</a></li>
               </ul>
             </div>

@@ -124,6 +124,7 @@ function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
+        'footer-menu' => __('Footer Menu', 'html5blank'), // Footer Navigation
     ));
 }
 
