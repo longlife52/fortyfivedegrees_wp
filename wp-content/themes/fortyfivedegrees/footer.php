@@ -29,7 +29,7 @@
                 <svg class="icon icon-facebook hvr-wobble-to-top-right"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg>
             </a>
 
-            <p class="copyright">&copy2017 45 Degrees</p>
+            <p class="copyright">&copy <?= date('Y'); ?> 45 Degrees</p>
 
             <div class="legal">
               <ul>
