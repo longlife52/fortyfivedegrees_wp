@@ -30,9 +30,7 @@
                 <p>Make sense out of complicated matters by understanding the facts and laying out the puzzle peices. Envision a future and think more clearly. As you determine your options, you will discover... </p>
                 <a href="post.html">
                     <div class="blog_list_button">
-                      <a href="#">
-                        <button class="btn_red">Read More &gt&gt</button>
-                      </a>
+                          <button class="btn_red">Read More &gt&gt</button>
                     </div>
                 </a>
             </div>
