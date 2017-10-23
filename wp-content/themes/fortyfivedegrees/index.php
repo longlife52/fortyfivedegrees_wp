@@ -39,7 +39,7 @@
         <?php endwhile; ?>
     </div> <!-- close for .blog_list -->
 
-    <?php else; ?>
+    <?php else: ?>
       <em>No Posts Found</em>
     <?php endif; ?>
 

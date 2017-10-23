@@ -28,9 +28,11 @@
                 <a href="#" class="js-mobile-nav-close"> &times;</a>
             </div>
             <ul>
-                <li class="home"><a href="index.html"><img class= "hvr-wobble-to-top-right" src="<?php bloginfo('template_url'); ?>/assets/dist/img/logo_small.png" alt="45 Degrees logo" title="Go to 45 Degrees Home Page"></a></li>
+                <li class="home"><a href="<?php bloginfo('url'); ?>"><img class= "hvr-wobble-to-top-right" src="<?php bloginfo('template_url'); ?>/assets/dist/img/logo_small.png" alt="45 Degrees logo" title="Go to 45 Degrees Home Page"></a></li>
 
-                <li class="coaching"><a href="coaching.html">Coaching</a></li>
+                <?php html5blank_nav(); ?>
+
+                <!-- <li class="coaching"><a href="coaching.html">Coaching</a></li>
 
                 <li class="trainings"><a href="trainings.html">Trainings</a></li>
 
@@ -39,6 +41,7 @@
                 <li class="blog"><a href="blog.html">Blog</a></li>
 
                 <li class="contact"><a href="contact.html">Contact</a></li>
+              -->
             </ul>
         </nav>
 
