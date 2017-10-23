@@ -31,6 +31,7 @@
                 <li class="home"><a href="<?php bloginfo('url'); ?>"><img class= "hvr-wobble-to-top-right" src="<?php bloginfo('template_url'); ?>/assets/dist/img/logo_small.png" alt="45 Degrees logo" title="Go to 45 Degrees Home Page"></a></li>
 
                 <?php html5blank_nav(); ?>
+                
 
                 <!-- <li class="coaching"><a href="coaching.html">Coaching</a></li>
 
