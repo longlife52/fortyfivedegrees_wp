@@ -31,9 +31,8 @@
                 <li class="home"><a href="<?php bloginfo('url'); ?>"><img class= "hvr-wobble-to-top-right" src="<?php bloginfo('template_url'); ?>/assets/dist/img/logo_small.png" alt="45 Degrees logo" title="Go to 45 Degrees Home Page"></a></li>
 
                 <?php html5blank_nav(); ?>
-                
-
-                <!-- <li class="coaching"><a href="coaching.html">Coaching</a></li>
+                <!--
+                <li class="coaching"><a href="coaching.html">Coaching</a></li>
 
                 <li class="trainings"><a href="trainings.html">Trainings</a></li>
 
@@ -59,8 +58,11 @@
         <nav class="nav">
             <h2 class="hide">navigation</h2>
                 <ul>
-                    <li><a href="index.html"><img class="home hvr-wobble-to-top-right" src="<?php bloginfo('template_url'); ?>/assets/dist/img/logo_small.png" alt="45 Degrees logo" title="Go to 45 Degrees Home Page"></a></li>
+                    <li><a href="<?php bloginfo('url'); ?>"><img class="home hvr-wobble-to-top-right" src="<?php bloginfo('template_url'); ?>/assets/dist/img/logo_small.png" alt="45 Degrees logo" title="Go to 45 Degrees Home Page"></a></li>
 
+                    <?php html5blank_nav(); ?>
+
+                    <!--
                     <li><a href="coaching.html" class="coaching">Coaching</a></li>
 
                     <li><a href="trainings.html" class="trainings">Trainings</a></li>
@@ -70,6 +72,7 @@
                     <li><a href="blog.html" class="blog">Blog</a></li>
 
                     <li><a href="contact.html" class="contact">Contact</a></li>
+                  -->
                 </ul>
         </nav>
 
