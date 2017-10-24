@@ -12,15 +12,18 @@
     </div> <!--closer for .billboard_black -->
 </div> <!-- close for .billboard_black_wrapper-->
 
-<!-- BLOG POST -->
+<!-- BLOG POST     /assets/dist/img/clear.png" alt="Increase clarity with focus." title="Increase clarity with focus." -->
 <div class="blog_content">
+  <!--
     <div>
         <p>Don't leave your future to chance. Here are 3 habits that will make a positive difference in your attitude, actions, and results.</p>
     </div>
-
+-->
+    <img src="<?php bloginfo('template_url'); ?>">
+    <!--
     <div class="blog_image">
-        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/clear.png" alt="Increase clarity with focus." title="Increase clarity with focus.">
     </div>
+  -->
 
     <div class="blog_copy">
       <?php the_content() ?>
