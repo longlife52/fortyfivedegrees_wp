@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<h1></h1>
 
 <!-- BILLBOARD -->
 <div class="billboard_black_wrapper">
