@@ -13,6 +13,8 @@
             <h4>SIGN UP FOR OUR NEWSLETTER</h4>
 
             <div class="form-area">
+              <?= do_shortcode('[contact-form-7 id="96" title="Contact form 1"]'); ?>
+              <!--
                 <form class="flex-form" id="newsletter" method="post" action="mailto:garrisonridge@gmail.com">
                     <label for="name"></label>
                     <input type="text"  name="name" placeholder="FirstName">
@@ -22,7 +24,8 @@
 
                     <input type="submit" value="SIGN UP" class="submit_hover">
                 </form>
-            </div>
+              -->
+            </div> <!-- close form-area -->
 
             <!-- FACEBOOK ICON -->
             <a href="https://www.facebook.com/45DegreesCoaching" target="blank">
