@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 <!-- HERO -->
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <div>
     <div>
         <img class="image_full" src="<?php bloginfo('template_url'); ?>/assets/dist/img/cat_large_text.jpg" alt="" title="">
@@ -13,18 +15,16 @@
 
 <!-- WORKSHOP DETAILS -->
 <div class="workshop">
-    <h2 class="center-text">Get Out of a Rut</h2>
+    <h2 class="center-text">
+      <?php the_title(); ?>
+    </h2>
     <h3 class="center-text">Learn 7 Highly Effective Techniques</h3>
 
     <div class="workshop_wrapper">
         <div class="flex_content workshop_description">
-            <p>Get unstuck as you learn strategies to move you forward with confidence that you are headed in the right direction. You will gain </p>
 
-            <ul>
-                <li>Increased clarity</li>
-                <li>Practical steps forward</li>
-                <li>Ideas to implement immediately.</li>
-            </ul>
+          <?php the_content(); ?>
+
         </div>
 
         <div class="flex_content workshop_details">
@@ -44,5 +44,6 @@
     </div>
 </div> <!--  closes .workshop -->
 
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

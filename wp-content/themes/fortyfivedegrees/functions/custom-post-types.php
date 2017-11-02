@@ -69,6 +69,8 @@ function create_post_type_html5()
         'supports' => array(
             'title',
             'excerpt',
+            'editor',
+            'revisions',
             'thumbnail'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'menu_icon' => 'dashicons-info',   // http://www.kevinleary.net/wordpress-dashicons-list-custom-post-type-icons/
@@ -83,4 +85,5 @@ function create_post_type_html5()
             'hierarchical' => true, // Is this taxonomy hierarchical like categories or not hierarchical like tags.
         )
     );
+
 }
