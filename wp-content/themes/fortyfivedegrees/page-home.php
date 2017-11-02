@@ -49,7 +49,7 @@ get_header(); ?>
               <div class="card-two-head">
                   <p>Our unique "90 Days of Coaching" delivers optimal results. Learn to employ proven tools and strategies and establish clear focus and better decisions.</p>
               </div>
-              <a href="coaching.html" class="card-two__learn-more">
+              <a href="coaching" class="card-two__learn-more">
                   <button class="btn_red">Learn More &gt&gt</button>
               </a>
           </div>
@@ -59,7 +59,7 @@ get_header(); ?>
               <div class="card-two-head">
                   <p>Become inspired in a day worshop or through a series of seminars. Energize your team, bolster productivity, and enhance loyalty while cultivating a proactive environment.</p>
               </div>
-              <a href="trainings.html" class="card-two__learn-more">
+              <a href="trainings" class="card-two__learn-more">
                   <button class="btn_red">Learn More &gt&gt</button>
               </a>
           </div>
