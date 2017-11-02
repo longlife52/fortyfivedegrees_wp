@@ -10,7 +10,7 @@ function getBaseURL () {
         init : function(ed, url) {
             ed.addButton('vecb_button1', {
                 title : 'h3 Heading for Content',image : url+'/icons/heading_3.png',onclick : function() {
-                     ed.selection.setContent('[heading]' + ed.selection.getContent() + '[/heading]');
+                     ed.selection.setContent('[subheading]' + ed.selection.getContent() + '[/subheading]');
                 }
             });
         },

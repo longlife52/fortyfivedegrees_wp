@@ -17,7 +17,7 @@ function html5_shortcode_demo($atts, $content = null)
     return '<div class="shortcode-demo">' . do_shortcode($content) . '</div>'; // do_shortcode allows for nested Shortcodes
 } */
 
-// Shortcode Demo with simple <h2> tag
+// Shortcode Demo with simple <h3> tag
 function fortyFiveHeading($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
     return '<h3>' . $content . '</h3>';
