@@ -19,7 +19,13 @@ get_header(); ?>
 </div> <!-- close .billboard_black_wrapper-->
 
 <!-- TRAINING CARDS -->
+<?php $query = new WP_Query( array (
+    'posts_per_page' => ''
+  ));
+  if ($query->have_posts()) : ?>
+
 <div class="card-three-grid-wrapper trainings_pad">
+<?php while ($query->have_posts()) : $query->the_post(); ?>
         <div class="card-three">
             <div class="card-three__image">
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/yarn.jpg" alt="" title="">
@@ -34,10 +40,11 @@ get_header(); ?>
                 </div>
             </a>
         </div>
-
+<?php endwhile; ?>
+<!--
         <div class="card-three">
             <div class="card-three__image">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/bee.jpg" alt="" title="">
+                <img src="assets/dist/img/bee.jpg" alt="" title="">
             </div>
             <div class="card-three__content">
                 <h3>End Procrastination</h3>
@@ -52,7 +59,7 @@ get_header(); ?>
 
         <div class="card-three">
             <div class="card-three__image">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/cat.jpg" alt="" title="">
+                <img src="assets/dist/img/cat.jpg" alt="" title="">
             </div>
             <div class="card-three__content">
                 <h3>Out of a Rut</h3>
@@ -64,7 +71,9 @@ get_header(); ?>
                 </div>
             </a>
         </div>
-</div> <!-- close of card-three-grid-wrapper -->
 
+-->
+</div> <!-- close of card-three-grid-wrapper -->
+<?php endif; ?>
 
 <?php get_footer(); ?>

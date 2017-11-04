@@ -51,17 +51,17 @@ function create_post_type_html5()
         array(
         'labels' => array(
             'name' => __('Workshop', 'html5blank'), // Rename these to suit
-            'singular_name' => __('workshop', 'html5blank'),
+            'singular_name' => __('Workshop', 'html5blank'),
             'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New workshop', 'html5blank'),
+            'add_new_item' => __('Add New Workshop', 'html5blank'),
             'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit workshop', 'html5blank'),
-            'new_item' => __('New workshop', 'html5blank'),
-            'view' => __('View workshop', 'html5blank'),
-            'view_item' => __('View workshop', 'html5blank'),
-            'search_items' => __('Search workshop', 'html5blank'),
-            'not_found' => __('No workshops found', 'html5blank'),
-            'not_found_in_trash' => __('No workshops found in Trash', 'html5blank')
+            'edit_item' => __('Edit Workshop', 'html5blank'),
+            'new_item' => __('New Workshop', 'html5blank'),
+            'view' => __('View Workshop', 'html5blank'),
+            'view_item' => __('View Workshop', 'html5blank'),
+            'search_items' => __('Search Workshop', 'html5blank'),
+            'not_found' => __('No Workshops found', 'html5blank'),
+            'not_found_in_trash' => __('No Workshops found in Trash', 'html5blank')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -81,7 +81,7 @@ function create_post_type_html5()
         'workshop',             // Object Type
         array(
             'label' => __( 'Type of Workshop' ),
-            'rewrite' => array( 'slug' => 'type' ),
+            'rewrite' => array( 'slug' => 'workshop' ),
             'hierarchical' => true, // Is this taxonomy hierarchical like categories or not hierarchical like tags.
         )
     );
