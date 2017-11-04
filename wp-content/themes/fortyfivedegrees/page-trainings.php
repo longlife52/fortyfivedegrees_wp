@@ -32,8 +32,8 @@ get_header(); ?>
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/yarn.jpg" alt="" title="">
             </div>
             <div class="card-three__content">
-                <h3>Stop Being Scattered</h3>
-                <p>Overloaded? Over committed? Learn and practice our Dynamic 5 Point Strategy.</p>
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_excerpt(); ?></p>
             </div>
             <a href="workshop.html">
                 <div class="card-three__read-more">
