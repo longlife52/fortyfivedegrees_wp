@@ -123,27 +123,35 @@ get_header(); ?>
     </div> <!--  close black background for carousel-->
 
 <!-- BLOG CARDS -->
+<?php $query = new WP_Query( array (
+    'posts_per_page' => '3',
+  ));
+  if ($query->have_posts()) : ?>
+
   <div class="blog_preview">
       <h2>Reveal Your Best Self</h2>
+
       <div class="card-three-grid-wrapper">
+      <?php while ($query->have_posts()) : $query->the_post(); ?>
               <div class="card-three">
                   <div class="card-three__image">
-                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/clarity.jpg" alt="" title="">
+                      <img src="<?php the_post_thumbnail(); ?>">
                   </div>
                   <div class="card-three__content">
-                      <h3>Clarity</h3>
-                      <p>Make sense out of complicated matters by understanding the facts and laying out the puzzle pieces. Envision a future and think more clearly.</p>
+                      <h3><?php the_title(); ?></h3>
+                      <p><?php the_excerpt(); ?></p>
                   </div>
-                  <a href="post.html">
+                  <a href="<?php the_permalink(); ?>">
                       <div class="card-three__read-more">
                           <button class="btn_red">Read More &gt&gt</button>
                       </div>
                   </a>
               </div>
-
+        <?php endwhile; ?>
+<!--
               <div class="card-three">
                   <div class="card-three__image">
-                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/horse.jpg" alt="" title="">
+                      <img src="assets/dist/img/horse.jpg" alt="" title="">
                   </div>
                   <div class="card-three__content">
                       <h3>Practical Action</h3>
@@ -158,7 +166,7 @@ get_header(); ?>
 
               <div class="card-three">
                   <div class="card-three__image">
-                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/growth.jpg" alt="" title="">
+                      <img src="assets/dist/img/growth.jpg" alt="" title="">
                   </div>
                   <div class="card-three__content">
                       <h3>Growth</h3>
@@ -170,8 +178,9 @@ get_header(); ?>
                       </div>
                   </a>
               </div>
+-->
       </div> <!-- close of card-three-grid-wrapper -->
+
   </div> <!-- closes blog_preview -->
-
-
+  <?php endif; ?>
 <?php get_footer(); ?>
