@@ -49,7 +49,7 @@ get_header(); ?>
               <div class="card-two-head">
                   <p>Our unique "90 Days of Coaching" delivers optimal results. Learn to employ proven tools and strategies and establish clear focus and better decisions.</p>
               </div>
-              <a href="coaching" class="card-two__learn-more">
+              <a href="/coaching/" class="card-two__learn-more">
                   <button class="btn_red">Learn More &gt&gt</button>
               </a>
           </div>
@@ -59,7 +59,7 @@ get_header(); ?>
               <div class="card-two-head">
                   <p>Become inspired in a day worshop or through a series of seminars. Energize your team, bolster productivity, and enhance loyalty while cultivating a proactive environment.</p>
               </div>
-              <a href="trainings" class="card-two__learn-more">
+              <a href="/trainings/" class="card-two__learn-more">
                   <button class="btn_red">Learn More &gt&gt</button>
               </a>
           </div>
@@ -148,37 +148,7 @@ get_header(); ?>
                   </a>
               </div>
         <?php endwhile; ?>
-<!--
-              <div class="card-three">
-                  <div class="card-three__image">
-                      <img src="assets/dist/img/horse.jpg" alt="" title="">
-                  </div>
-                  <div class="card-three__content">
-                      <h3>Practical Action</h3>
-                      <p>Roll up your sleeves and get to work with an action plan post each session. We outline concrete steps to achieve changes.</p>
-                  </div>
-                  <a href="post.html">
-                      <div class="card-three__read-more">
-                          <button class="btn_red">Read More &gt&gt</button>
-                      </div>
-                  </a>
-              </div>
 
-              <div class="card-three">
-                  <div class="card-three__image">
-                      <img src="assets/dist/img/growth.jpg" alt="" title="">
-                  </div>
-                  <div class="card-three__content">
-                      <h3>Growth</h3>
-                      <p>Ensure your path forward aligns with personal fulfillment and wholeness. Learn to set your personal bar higher.</p>
-                  </div>
-                  <a href="post.html">
-                      <div class="card-three__read-more">
-                          <button class="btn_red">Read More &gt&gt</button>
-                      </div>
-                  </a>
-              </div>
--->
       </div> <!-- close of card-three-grid-wrapper -->
 
   </div> <!-- closes blog_preview -->
