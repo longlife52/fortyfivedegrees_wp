@@ -20,7 +20,7 @@ get_header(); ?>
 
 <!-- TRAINING CARDS -->
 <?php $query = new WP_Query( array (
-    'posts_per_page' => ''
+    'posts_per_page' => '3'
   ));
   if ($query->have_posts()) : ?>
 
