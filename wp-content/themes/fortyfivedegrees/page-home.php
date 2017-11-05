@@ -40,20 +40,26 @@ get_header(); ?>
       </div>
   </div>
 
+  <?php endwhile; endif; ?>
 <!-- INDIVIDUAL COACHING + TRAINING CARDS -->
   <div class="services-style">
       <h2><?php the_field ('two_column_heading'); ?></h2>
+
+      <?php $twoColumn = get_field('two_column');
+      if ($twoColumn) { ?>
       <div class="card-two-wrapper services-pad">
+        <?php foreach ($twoColumn as $two_column) { ?>
           <div class="card-two">
-              <h4>Coaching</h4>
+              <h4><?= $two_column['heading']; ?></h4>
               <div class="card-two-head">
-                  <p>Our unique "90 Days of Coaching" delivers optimal results. Learn to employ proven tools and strategies and establish clear focus and better decisions.</p>
+                  <p><?= $two_column['text']; ?></p>
               </div>
-              <a href="/coaching/" class="card-two__learn-more">
-                  <button class="btn_red">Learn More &gt&gt</button>
+              <a href="<?php the_permalink($two_column['button_link']->ID); ?>" class="card-two__learn-more">
+                  <button class="btn_red"><?= $two_column['button_label']; ?></button>
               </a>
           </div>
-
+        <?php } ?>
+<!--
           <div class="card-two">
               <h4>Trainings</h4>
               <div class="card-two-head">
@@ -63,10 +69,12 @@ get_header(); ?>
                   <button class="btn_red">Learn More &gt&gt</button>
               </a>
           </div>
+-->
       </div> <!--close of card-two-wrapper -->
+    <?php } ?>
   </div> <!--close services-style -->
 
-<?php endwhile; endif; ?>
+
 
 <!-- TESTIMONIAL SLIDER -->
   <div class="carousel_wrapper"> <!-- black background for carousel -->
