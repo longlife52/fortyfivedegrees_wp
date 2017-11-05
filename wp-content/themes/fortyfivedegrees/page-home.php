@@ -4,6 +4,8 @@ Template Name: Home
 */
 get_header(); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
   <!-- BILLBOARD -->
   <div class="billboard_black_wrapper">
 
@@ -13,15 +15,14 @@ get_header(); ?>
           </div>
           <div class="titles_homepage_mobile">
               <h2>Executive</h2>
-              <h1>Coaching</h1>
+              <h1><?php the_field ('billboard_heading'); ?></h1>
           </div>
               <div class="p_space">
-                  <p>45 degrees is the optimal angle to launch an object</p>
-                  <p>the greatest distance with the least resistance.</p>
+                  <p><?php the_field ('billboard_text'); ?></p>
               </div>
 
           <div class="center-text button-box">
-              <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_teal">play video &gt&gt</p></a>
+              <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_teal"><?php the_field ('billboard_button_label'); ?></p></a>
           </div>
       </div> <!--closer for .billboard_black -->
   </div> <!-- close for .billboard_black_wrpper -->
@@ -38,6 +39,8 @@ get_header(); ?>
           <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_teal">contact us</p></a>
       </div>
   </div>
+
+<?php endwhile; endif; ?>
 
 <!-- INDIVIDUAL COACHING + TRAINING CARDS -->
   <div class="services-style">
