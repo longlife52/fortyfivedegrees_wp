@@ -7,7 +7,7 @@
     <div class="billboard_black billboard">
         <div class="blog_title">
             <h1><?php the_title(); ?></h1>
-            <h2>problem solving your work and personal life </h2>
+            <h2><?php the_field('subtitle'); ?></h2>
         </div>
     </div> <!--closer for .billboard_black -->
 </div> <!-- close for .billboard_black_wrapper-->
