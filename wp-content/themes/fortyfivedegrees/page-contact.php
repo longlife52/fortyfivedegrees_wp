@@ -4,22 +4,30 @@ Template Name: Contact
 */
 get_header(); ?>
 
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <!-- SELL CONTENT -->
 <div class="flex_wrapper">
     <!-- IMAGE -->
     <div class="flex_content">
-        <img class="content_img" src="<?php bloginfo('template_url'); ?>/assets/dist/img/keys.jpg" alt="45 Degrees gives you the keys to success." title="45 Degrees gives you the keys to success." >
+      <div class="content_img">
+        <?php the_field('image'); ?>
+      </div>
+      <!--
+        <img class="content_img" <?php the_field('image'); ?>>
+      -->
     </div>
 
 <!-- CONTENT -->
 
     <div class="flex_content billboard_teal">
         <div class="contact_call">
-            <h2>let's Go!</h2>
-            <p>You drive. We'll navigate.</p>
+            <h2><?php the_field('heading'); ?></h2>
+            <p><?php the_field('sub_heading'); ?></p>
         </div>
     </div>
 </div> <!-- closes .flex_wrapper -->
 
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
