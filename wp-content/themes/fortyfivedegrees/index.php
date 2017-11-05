@@ -1,14 +1,16 @@
 <?php get_header(); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <!-- BILLBOARD -->
     <div class="billboard_black_wrapper">
         <div class="billboard_black billboard">
             <div class="blog_title">
-            <h1>Blog</h1>
+            <h1><?php the_field('billboard_heading'); ?></h1>
             <h2>tips for you to go farther</h2>
         </div>
         </div> <!--closer for .billboard_black -->
     </div> <!--closer for .billboard_black_wrapper -->
+<?php endwhile; endif; ?>
 
 <!-- BLOG ARTICLE LIST -->
     <?php if (have_posts()) : ?>
