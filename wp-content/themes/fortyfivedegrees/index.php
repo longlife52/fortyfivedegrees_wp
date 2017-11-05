@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <!-- BILLBOARD -->
     <div class="billboard_black_wrapper">
         <div class="billboard_black billboard">
@@ -10,7 +9,6 @@
         </div>
         </div> <!--closer for .billboard_black -->
     </div> <!--closer for .billboard_black_wrapper -->
-<?php endwhile; endif; ?>
 
 <!-- BLOG ARTICLE LIST -->
     <?php if (have_posts()) : ?>

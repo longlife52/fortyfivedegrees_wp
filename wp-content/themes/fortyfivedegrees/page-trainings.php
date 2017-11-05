@@ -7,13 +7,13 @@ get_header(); ?>
 <!-- BILLBOARD -->
 <div class="billboard_black_wrapper">
     <div class="billboard_black billboard">
-        <h1>Trainings</h1>
+        <h1><?php the_field('billboard_heading'); ?></h1>
             <div class="p_space">
-                <p>Learn techniques to develop your greatest potential. Watch the video for a taste of our trainings and learn how to quickly shift perspective in just a few minutes.</p>
+                <p><?php the_field('billboard_text'); ?></p>
             </div>
 
         <div class="center-text button-box">
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_teal">watch video &gt&gt</p></a>
+            <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_teal"><?php the_field('billboard_button_label'); ?></p></a>
         </div>
     </div> <!--closer for .billboard_black -->
 </div> <!-- close .billboard_black_wrapper-->
