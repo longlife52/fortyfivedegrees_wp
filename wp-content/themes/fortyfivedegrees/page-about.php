@@ -5,13 +5,13 @@ Template Name: About
 get_header(); ?>
 
 <div class="billboard_white billboard">
-    <h1>About Us</h1>
+    <h1><?php the_field('billboard_heading'); ?></h1>
         <div class="p_space">
-            <p>We work closely with you, and provide the tools needed to realize your full potential. We help you discover clarity in your personal and professional life.</p>
+            <p><?php the_field('billboard_text'); ?></p>
         </div>
 
     <div class="center-text button-box">
-        <a href="#team" data-scroll><p class="ghost_button ghost_btn_teal smoothScroll">Meet Our Team</p></a>
+        <a href="#team" data-scroll><p class="ghost_button ghost_btn_teal smoothScroll"><?php the_field('billboard_button_label'); ?></p></a>
     </div>
 </div> <!--closer for billboard -->
 
