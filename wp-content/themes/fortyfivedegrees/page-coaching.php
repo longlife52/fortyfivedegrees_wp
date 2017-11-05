@@ -4,14 +4,16 @@ Template Name: Coaching
 */
 get_header(); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 <div class="billboard_white billboard">
-    <h1>Coaching</h1>
+    <h1><?php the_field('billboard_heading'); ?></h1>
         <div class="p_space">
-            <p>Visualize goals and establish results-driven plans. As a strong soundboard for our clients, we illuminate strengths while helping you establish clear focus.</p>
+            <p><?php the_field('billboard_text'); ?></p>
         </div>
 
     <div class="center-text button-box">
-        <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_teal">start now</p></a>
+        <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_teal"><?php the_field('billboard_button_label'); ?></p></a>
     </div>
 </div> <!--closer for billboard -->
 
@@ -52,5 +54,7 @@ get_header(); ?>
         <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_white">Let's Talk</p></a>
     </div>
 </div>
+
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
