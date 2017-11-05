@@ -29,7 +29,7 @@ get_header(); ?>
 <?php while ($query->have_posts()) : $query->the_post(); ?>
         <div class="card-three">
             <div class="card-three__image">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/yarn.jpg" alt="" title="">
+              <?php the_post_thumbnail(); ?>
             </div>
             <div class="card-three__content">
                 <h3><?php the_title(); ?></h3>

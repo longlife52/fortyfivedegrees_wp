@@ -4,8 +4,6 @@ Template Name: Contact
 */
 get_header(); ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
 <!-- SELL CONTENT -->
 <div class="flex_wrapper">
     <!-- IMAGE -->
@@ -13,9 +11,6 @@ get_header(); ?>
       <div class="content_img">
         <?php the_field('image'); ?>
       </div>
-      <!--
-        <img class="content_img" <?php the_field('image'); ?>>
-      -->
     </div>
 
 <!-- CONTENT -->
@@ -28,6 +23,5 @@ get_header(); ?>
     </div>
 </div> <!-- closes .flex_wrapper -->
 
-<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
