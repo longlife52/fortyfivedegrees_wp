@@ -33,19 +33,16 @@ get_header(); ?>
 
 <!-- CALL TO ACTION -->
   <div class="hero_call_to_action">
-      <h2>Ready to go farther?</h2>
+      <h2><?php the_field ('hero_heading'); ?></h2>
 
       <div class="center-text button-box">
-          <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_teal">contact us</p></a>
+          <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_teal"><?php the_field ('hero_button_label'); ?></p></a>
       </div>
   </div>
 
-<?php endwhile; endif; ?>
-
 <!-- INDIVIDUAL COACHING + TRAINING CARDS -->
   <div class="services-style">
-      <h2>Get from where you are</h2>
-      <h2>to where you want to be</h2>
+      <h2><?php the_field ('two_column_heading'); ?></h2>
       <div class="card-two-wrapper services-pad">
           <div class="card-two">
               <h4>Coaching</h4>
@@ -68,6 +65,8 @@ get_header(); ?>
           </div>
       </div> <!--close of card-two-wrapper -->
   </div> <!--close services-style -->
+
+<?php endwhile; endif; ?>
 
 <!-- TESTIMONIAL SLIDER -->
   <div class="carousel_wrapper"> <!-- black background for carousel -->
