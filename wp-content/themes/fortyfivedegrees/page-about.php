@@ -73,35 +73,26 @@ get_header(); ?>
   </div> <!--  close black background for carousel-->
 
 <!-- OUR TEAM -->
+
 <div id="team" class="team_wrapper">
-    <h2 class="team_title">Our Team</h2>
+    <h2 class="team_title"><?php the_field ('team_heading'); ?></h2>
+
+    <?php $teamBios = get_field('team_bios');
+    if ($teamBios) {
+    foreach ($teamBios as $team_bios) { ?>
     <div class="team_card">
         <div class="team_image">
             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/diane.jpg" alt="Diane Overgard" title="Diane Overgard">
-            <h2>Diane Overgard</h2>
-            <h3>Certified Executive Life Coach </h3>
+            <h2><?= $team_bios['name']; ?></h2>
+            <h3><?= $team_bios['title']; ?></h3>
         </div>
 
         <div class="team_bio">
-            <p>Diane Overgard is a certified Executive Life Coach, sought after speaker, and published author. She is the Founder of 45 Degrees Coaching, providing individual and business team coaching to local, national, and international clients since 2004. She knows how adults learn and quickly establishes an energizing environment of trust and respect, with enough light-heartedness to encourage clients to open up, have fun, and try new behaviors.</p>
-
-            <p>Diane knows what motivates people to make decisions and change. She will empower you to add more energy and satisfaction both at work and home. </p>
+          <?= $team_bios['bio']; ?>
         </div>
     </div> <!--closes .team_card -->
+    <?php } } ?>
 
-    <div class="team_card">
-        <div class="team_image">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/fred.jpg" alt="Fred Willman" title="Fred Willman">
-            <h2>Fred Willman</h2>
-            <h3>Certified Executive Life Coach </h3>
-        </div>
-
-        <div class="team_bio">
-            <p>With over 20 years experience in leadership positions for a Fortune 250 organization, Fred Willman knows how to go from good to great. Fred provided leadership for the Key Account Salesperson Program and is highly involved with new manager immersion training, client relationship strategy, and general manager development. His robust experience training high-level exectuives within a large organization makes him aware and qualified to coahc with corporate leaders.</p>
-
-            <p>Fred's experience and sharpened focus gives clients confidence. As a trained coach, he will not become an obstacle to exploration. </p>
-        </div>
-    </div> <!--closes .team_card -->
 </div> <!--close .team_wrapper -->
 
 
