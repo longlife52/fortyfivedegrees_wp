@@ -45,7 +45,7 @@
 
 <!-- BILLBOARD CALL TO ACTION  -->
     <div class="billboard_teal">
-        <h2>WANT MORE?</h2>
+        <h2><?php the_field('action_heading'); ?></h2>
         <div class="center-text button-box">
             <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_white">Blog Archive</p></a>
         </div>
