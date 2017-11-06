@@ -4,8 +4,6 @@ Template Name: Coaching
 */
 get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
 <div class="billboard_white billboard">
     <h1><?php the_field('billboard_heading'); ?></h1>
         <div class="p_space">
@@ -27,34 +25,21 @@ get_header(); ?>
 <!-- CONTENT -->
     <div class="flex_content content_text_coaching">
         <div> <!-- this div is so all the content displays center center -->
-            <h2 class="center-text">Discover You</h2>
-            <p>Our unique "90 Days of Coaching" will help you</p>
+            <h2 class="center-text"><?php the_field('feature_heading'); ?></h2>
 
-            <ul>
-                <li>Increase self awareness</li>
+            <?php the_field('feature_content'); ?>
 
-                <li>Elevate competence in your skills</li>
-
-                <li>Recognize your abilities</li>
-
-                <li>Spot your challenges</li>
-
-                <li>Develop concrete actions</li>
-
-                <li>Maintain accountability for your actions.</li>
-            </ul>
         </div> <!-- closes center center content-->
     </div> <!-- closes .flex_content .content_text_coaching -->
 </div> <!-- closes .flex_wrapper -->
 
 <!-- BILLBOARD CALL TO ACTION  -->
 <div class="billboard_teal">
-    <h2>Ready?</h2>
+    <h2><?php the_field('action_heading'); ?></h2>
     <div class="center-text button-box">
-        <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_white">Let's Talk</p></a>
+        <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_white"><?php the_field('action_button_label'); ?></p></a>
     </div>
 </div>
 
-<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

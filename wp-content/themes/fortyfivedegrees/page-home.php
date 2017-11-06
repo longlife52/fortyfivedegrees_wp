@@ -14,7 +14,7 @@ get_header(); ?>
               <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/logo_small.png" alt="45 Degrees logo" title="45 Degrees logo">
           </div>
           <div class="titles_homepage_mobile">
-              <h2>Executive</h2>
+              <h2><?php the_field ('pre_heading'); ?></h2>
               <h1><?php the_field ('billboard_heading'); ?></h1>
           </div>
               <div class="p_space">
