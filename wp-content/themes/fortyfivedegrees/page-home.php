@@ -54,7 +54,8 @@ get_header(); ?>
               <div class="card-two-head">
                   <p><?= $two_column['text']; ?></p>
               </div>
-              <a href="<?php the_permalink($two_column['button_link']->ID); ?>" class="card-two__learn-more">
+
+              <a href="<?= $two_column['button_link']; ?>" class="card-two__learn-more">
                   <button class="btn_red"><?= $two_column['button_label']; ?></button>
               </a>
           </div>

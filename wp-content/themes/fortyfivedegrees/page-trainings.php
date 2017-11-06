@@ -35,7 +35,7 @@ get_header(); ?>
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_excerpt(); ?></p>
             </div>
-            <a href="workshop.html">
+            <a href="<?php the_permalink(); ?>">
                 <div class="card-three__read-more">
                     <button class="btn_red">Register Now &gt&gt</button>
                 </div>

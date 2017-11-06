@@ -1240,7 +1240,7 @@ input[type=submit] {
         .nav ul li a:hover {
           color: #66fcf1; }
 
-.nav ul li.selected a {
+.nav ul li.current-menu-item a {
   color: #66fcf1; }
 
 /* HAMBURGER NAVIGATION */
@@ -2021,7 +2021,9 @@ input[type=submit]:focus {
 /* BLOG */
 .blog_list_img img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .blog_list_text h2,
 .blog_list_text p {

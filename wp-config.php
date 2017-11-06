@@ -87,3 +87,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/** this code prevents contact form 7 plugin from adding empty <p> and <br> tags that *interere with custom sytles */
+define ( 'WPCF7_AUTOP', false );

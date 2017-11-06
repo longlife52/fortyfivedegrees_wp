@@ -4,7 +4,7 @@
     <div class="billboard_black_wrapper">
         <div class="billboard_black billboard">
             <div class="blog_title">
-            <h1><?php the_field('billboard_heading'); ?></h1>
+            <h1><?php the_field('billboard_heading', 13); ?></h1>
             <h2>tips for you to go farther</h2>
         </div>
         </div> <!--closer for .billboard_black -->
@@ -45,7 +45,7 @@
 
 <!-- BILLBOARD CALL TO ACTION  -->
     <div class="billboard_teal">
-        <h2><?php the_field('action_heading'); ?></h2>
+        <h2><?php the_field('action_heading', 13); ?></h2>
         <div class="center-text button-box">
             <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_white">Blog Archive</p></a>
         </div>

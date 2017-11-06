@@ -8,12 +8,10 @@ get_header(); ?>
 <div class="flex_wrapper">
     <!-- IMAGE -->
     <div class="flex_content">
-      <div class="content_img">
         <?php $image = get_field('image');
         if( !empty($image) ): ?>
-          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="content_img" />
         <?php endif; ?>
-      </div>
     </div>
 
 <!-- CONTENT -->
