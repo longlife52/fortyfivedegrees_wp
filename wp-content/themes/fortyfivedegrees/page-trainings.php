@@ -42,38 +42,7 @@ get_header(); ?>
             </a>
         </div>
 <?php endwhile; ?>
-<!--
-        <div class="card-three">
-            <div class="card-three__image">
-                <img src="assets/dist/img/bee.jpg" alt="" title="">
-            </div>
-            <div class="card-three__content">
-                <h3>End Procrastination</h3>
-                <p>Always putting things off? Learn 3 immediate chnages to help you see yourself from a new perspective and inspire you to get more done.</p>
-            </div>
-            <a href="workshop.html">
-                <div class="card-three__read-more">
-                    <button class="btn_red">Register Now &gt&gt</button>
-                </div>
-            </a>
-        </div>
 
-        <div class="card-three">
-            <div class="card-three__image">
-                <img src="assets/dist/img/cat.jpg" alt="" title="">
-            </div>
-            <div class="card-three__content">
-                <h3>Out of a Rut</h3>
-                <p>Get unstuck as you learn strategies to move you forward with confidence that you are headed in the right direction.</p>
-            </div>
-            <a href="workshop.html">
-                <div class="card-three__read-more">
-                    <button class="btn_red">Register Now &gt&gt</button>
-                </div>
-            </a>
-        </div>
-
--->
 </div> <!-- close of card-three-grid-wrapper -->
 <?php endif; ?>
 
