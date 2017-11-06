@@ -9,7 +9,10 @@ get_header(); ?>
     <!-- IMAGE -->
     <div class="flex_content">
       <div class="content_img">
-        <?php the_field('image'); ?>
+        <?php $image = get_field('image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
       </div>
     </div>
 
