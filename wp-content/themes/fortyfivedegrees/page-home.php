@@ -22,14 +22,16 @@ get_header(); ?>
               </div>
 
           <div class="center-text button-box">
-              <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_teal"><?php the_field ('billboard_button_label'); ?></p></a>
+              <a href="<?php the_field ('billboard_button_link'); ?>" target="blank" class="strip"><p class="ghost_button ghost_btn_teal"><?php the_field ('billboard_button_label'); ?></p></a>
           </div>
       </div> <!--closer for .billboard_black -->
   </div> <!-- close for .billboard_black_wrpper -->
 
 <!-- HERO -->
-
-  <img class="image_full" src="<?php bloginfo('template_url'); ?>/assets/dist/img/cape.jpg" alt="Woman in red cape" title="Woman in red cape.">
+<?php $image = get_field('hero_image');
+if( !empty($image) ): ?>
+  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="image_full" />
+<?php endif; ?>
 
 <!-- CALL TO ACTION -->
   <div class="hero_call_to_action">
@@ -60,17 +62,7 @@ get_header(); ?>
               </a>
           </div>
         <?php } ?>
-<!--
-          <div class="card-two">
-              <h4>Trainings</h4>
-              <div class="card-two-head">
-                  <p>Become inspired in a day worshop or through a series of seminars. Energize your team, bolster productivity, and enhance loyalty while cultivating a proactive environment.</p>
-              </div>
-              <a href="/trainings/" class="card-two__learn-more">
-                  <button class="btn_red">Learn More &gt&gt</button>
-              </a>
-          </div>
--->
+
       </div> <!--close of card-two-wrapper -->
     <?php } ?>
   </div> <!--close services-style -->

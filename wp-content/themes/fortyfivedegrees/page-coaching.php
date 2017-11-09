@@ -19,7 +19,10 @@ get_header(); ?>
 <div class="flex_wrapper">
     <!-- IMAGE -->
     <div class="flex_content">
-        <img class="content_img" src="<?php bloginfo('template_url'); ?>/assets/dist/img/coaching.jpg" alt="45 Degrees individual coaching turns the light on." title="45 Degress coaching turns the light on." >
+      <?php $image = get_field('feature_image');
+      if( !empty($image) ): ?>
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="content_img" />
+      <?php endif; ?>
     </div>
 
 <!-- CONTENT -->
