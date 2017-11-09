@@ -27,10 +27,7 @@
               -->
             </div> <!-- close form-area -->
 
-            <!-- FACEBOOK ICON -->
-            <a href="https://www.facebook.com/45DegreesCoaching" target="blank">
-                <svg class="icon icon-facebook hvr-wobble-to-top-right"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg>
-            </a>
+            <?php get_template_part ('partials/social_media'); ?>
 
             <p class="copyright">&copy <?= date('Y'); ?> 45 Degrees</p>
 

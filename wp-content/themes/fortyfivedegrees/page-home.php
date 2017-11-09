@@ -38,7 +38,7 @@ if( !empty($image) ): ?>
       <h2><?php the_field ('hero_heading'); ?></h2>
 
       <div class="center-text button-box">
-          <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_teal"><?php the_field ('hero_button_label'); ?></p></a>
+          <a href="mailto:<?php the_field ('hero_button_link'); ?>"><p class="ghost_button ghost_btn_teal"><?php the_field ('hero_button_label'); ?></p></a>
       </div>
   </div>
 
