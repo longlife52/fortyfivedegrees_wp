@@ -408,3 +408,15 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
 
 
 // TODO: INCLUDE AH HA CREATIVE BRANDED LOGIN SCREEN
+
+/** MOVE COMMENT TEXT AREA TO BOTTOM OF FORM
+*reference
+*http://www.wpbeginner.com/wp-tutorials/how-to-move-comment-text-field-to-bottom-in-wordpress-4-4/
+*/
+function wpb_move_comment_field_to_bottom( $fields ) {
+  $comment_field = $fields['comment'];
+  unset( $fields['comment'] );
+  $fields['comment'] = $comment_field;
+  return $fields;
+}
+add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom' );
