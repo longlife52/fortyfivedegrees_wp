@@ -45,4 +45,6 @@
 
 <?php endwhile; endif; ?>
 
+<?php comments_template(); ?>
+
 <?php get_footer(); ?>
