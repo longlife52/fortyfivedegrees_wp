@@ -47,11 +47,11 @@
     <div class="billboard_teal">
         <h2><?php the_field('action_heading', 13); ?></h2>
         <div class="center-text button-box">
-            <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_white">Blog Archive</p></a>
+            <a href="/archive.php"><p class="ghost_button ghost_btn_white">Blog Archive</p></a>
         </div>
 
         <?php get_template_part('partials/searchform'); ?>
-        
+
     </div>
 
 <?php get_footer(); ?>

@@ -35,11 +35,20 @@
     <h3>Learn More Ways to Get Clear </h3>
 
     <div class="links">
-        <a href=""><p>7 Problem Solving Insights</p></a>
+      <!-- code from https://wordpress.stackexchange.com/questions/41272/how-to-show-related-posts-by-category -->
+      <?php
 
-        <a href=""><p>How to Change Focus</p></a>
+      $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 5, 'post__not_in' => array($post->ID) ) );
+      if( $related ) foreach( $related as $post ) {
+      setup_postdata($post); ?>
+       <ul>
+              <li>
+              <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+              </li>
+          </ul>
+      <?php }
+      wp_reset_postdata(); ?>
 
-        <a href=""><p>A Simple Guide for Finding the Path </p></a>
     </div>
 </div>
 
