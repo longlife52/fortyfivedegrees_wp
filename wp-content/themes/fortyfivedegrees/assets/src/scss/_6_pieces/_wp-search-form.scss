@@ -1,0 +1,17 @@
+.search {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.search-input {
+  margin: em(10px);
+}
+
+.search-submit {
+  background-color: $red;
+  color: white;
+  padding: 0 em(10px) 0 em(10px);
+  font-size: em(18px);
+}

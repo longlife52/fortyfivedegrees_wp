@@ -1823,6 +1823,27 @@ input[type=submit]:focus {
 
 	** Just remember, these are set up as extends and not as actual class names **
 \*------------------------------------*/
+.search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 2em;
+  padding-top: 2em; }
+
+.search-input {
+  margin: 0.625em; }
+
+.search-submit {
+  background-color: #e44839;
+  color: white;
+  padding: 0 0.625em 0 0.625em;
+  font-size: 1.125em; }
+
 /* #PAGES */
 /* index.html STYLES */
 /* LOGO ON HOMEPAGE FOR MOIBILE DISPLAY */
