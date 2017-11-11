@@ -1888,6 +1888,28 @@ input[type=submit]:focus {
     .next_post a:hover {
       color: #e44839; }
 
+/* styles for pagination on index.php category.php archive.php */
+.navigation {
+  text-align: center;
+  font-family: "Roboto Condensed";
+  padding-bottom: 3.125em;
+  padding-top: 3.125em;
+  line-height: 3.5; }
+  .navigation ul li {
+    display: inline;
+    font-size: 1.125em; }
+  .navigation li {
+    padding-right: 1.25em; }
+    .navigation li a {
+      color: #1f2833;
+      background-color: #c5c6c7;
+      padding: 1.25em; }
+      .navigation li a:hover {
+        color: #e44839; }
+
+.active a {
+  text-decoration: none; }
+
 /* #PAGES */
 /* index.html STYLES */
 /* LOGO ON HOMEPAGE FOR MOIBILE DISPLAY */

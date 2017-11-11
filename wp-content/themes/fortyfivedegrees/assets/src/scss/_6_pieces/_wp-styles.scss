@@ -65,3 +65,40 @@
     }
   }
 }
+
+/* styles for pagination on index.php category.php archive.php */
+.navigation {
+    text-align: center;
+    font-family: $roboto;
+    padding-bottom: em(50px);
+    padding-top: em(50px);
+    line-height: 3.5;
+
+    ul li {
+      display: inline;
+      font-size: em(18px);
+
+    }
+
+    li {
+      padding-right: em(20px);
+
+      a {
+        color: $dark-grey;
+        background-color: $light-grey;
+        padding: em(20px);
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+}
+
+.active  {
+
+    a {
+      text-decoration: none;
+    }
+
+}
