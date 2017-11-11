@@ -39,6 +39,12 @@
         <?php endwhile; ?>
     </div> <!-- close for .blog_list -->
 
+    <!-- this is for numeric pagination; placed outside the while loop, but inside the conditional  source: http://www.wpbeginner.com/wp-themes/how-to-add-numeric-pagination-in-your-wordpress-theme/ -->
+
+    <?php wpbeginner_numeric_posts_nav(); ?>
+
+    <!-- this is the conditional -->
+
     <?php else: ?>
       <em>No Posts Found</em>
     <?php endif; ?>
