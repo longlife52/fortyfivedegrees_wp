@@ -1823,6 +1823,7 @@ input[type=submit]:focus {
 
 	** Just remember, these are set up as extends and not as actual class names **
 \*------------------------------------*/
+/*styles for the blog search form */
 .search {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1843,6 +1844,49 @@ input[type=submit]:focus {
   color: white;
   padding: 0 0.625em 0 0.625em;
   font-size: 1.125em; }
+
+/* styles for related posts on single.php" */
+.links {
+  font-size: 1.125em;
+  color: white;
+  font-family: "Roboto Condensed";
+  padding-bottom: 2.5em; }
+  .links ul {
+    margin-left: 3.75em; }
+  .links a {
+    padding-left: 0.625em; }
+
+/* styles for single.php pagination */
+#pagination {
+  padding-bottom: 2.5em; }
+  @media (min-width: 450px) {
+    #pagination {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.prev_post {
+  padding-bottom: 3.125em; }
+  @media (min-width: 450px) {
+    .prev_post {
+      padding-right: 6.25em; } }
+
+.prev_post,
+.next_post {
+  font-family: "Roboto Condensed";
+  font-size: 1.5em;
+  text-align: center; }
+  .prev_post a,
+  .next_post a {
+    color: #45a29e; }
+    .prev_post a:hover,
+    .next_post a:hover {
+      color: #e44839; }
 
 /* #PAGES */
 /* index.html STYLES */
@@ -2263,13 +2307,3 @@ input[type=submit]:focus {
     padding: 1.875em 3.75em 0 3.75em; }
   .link_area p:last-child {
     padding: 0 3.75em 1.25em 4.375em; }
-
-.links {
-  font-size: 1.125em;
-  color: white;
-  font-family: "Roboto Condensed";
-  padding-bottom: 2.5em; }
-  .links ul {
-    margin-left: 3.75em; }
-  .links a {
-    padding-left: 0.625em; }

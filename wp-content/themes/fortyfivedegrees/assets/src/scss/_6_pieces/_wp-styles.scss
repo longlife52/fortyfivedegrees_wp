@@ -1,0 +1,67 @@
+/*styles for the blog search form */
+.search {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.search-input {
+  margin: em(10px);
+}
+
+.search-submit {
+  background-color: $red;
+  color: white;
+  padding: 0 em(10px) 0 em(10px);
+  font-size: em(18px);
+}
+
+/* styles for related posts on single.php" */
+.links {
+  font-size: em(18px);
+  color: white;
+  font-family: $roboto;
+  padding-bottom: em(40px);
+
+  ul {
+    margin-left: em(60px);
+  }
+
+  a {
+    padding-left: em(10px);
+  }
+}
+
+/* styles for single.php pagination */
+#pagination {
+  padding-bottom: em(40px);
+
+  @include breakpoint(mobile) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.prev_post {
+  padding-bottom: em(50px);
+
+  @include breakpoint(mobile) {
+    padding-right: em(100px);
+  }
+}
+
+.prev_post,
+.next_post, {
+  font-family: $roboto;
+  font-size: em(24px);
+  text-align: center;
+
+  a {
+    color: $dark-teal;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
