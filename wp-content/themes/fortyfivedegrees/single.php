@@ -30,6 +30,11 @@
     </div> <!-- close of body copy -->
 </div> <!--close of blog content-->
 
+<div id="pagination">
+  <div class="next_post"><?php next_post_link('%link', 'Next Post >>') ?></div>
+  <div class="prev_post"><?php previous_post_link('%link', '<< Previous Post') ?></div><br clear="both" />
+</div>
+
 <!-- LINKS TO OTHER BLOG ARTICLES -->
 <div class="link_area link_white">
     <h3>Learn More Ways to Get Clear </h3>
