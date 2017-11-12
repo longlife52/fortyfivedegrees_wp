@@ -34,15 +34,17 @@
 
     p {
         padding: 0 em(20px) 0 em(20px);
+        font-size: em(20px);
     }
 
     h3 {
         display: inline-block;
         text-transform: uppercase;
         background-color: $dark-teal;
-        margin-left: em(60px);
-        line-height: 3em;
+        margin-left: em(20px);
+        line-height: 1.5em;
         color: $white;
+        padding: 0 em(60px) 0 em(50px);
     }
 
     @include breakpoint (large-mobile) {
@@ -53,12 +55,12 @@
 
         p {
             padding: 0 em(60px) 0 em(60px);
-            font-size: em(18px);
         }
 
         h3 {
             margin-bottom: 0;
             padding: 0 em(60px) 0 em(50px);
+            margin-left: em(60px);
         }
     }
 }
@@ -83,13 +85,20 @@
     }
 
     ul li {
-      margin-left: em(50px);
+      margin-left: em(10px);
+      margin-right: em(19px);
       font-family: $roboto;
-      font-size: 18px;
+      font-size: em(20px);
     }
 
     li {
       line-height: 1.5em;
+    }
+
+    @include breakpoint(large-mobile) {
+      ul li {
+        margin-left: em(50px);
+      }
     }
 }
 
