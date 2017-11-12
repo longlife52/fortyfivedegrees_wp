@@ -2329,7 +2329,8 @@ input[type=submit]:focus {
 .blog_copy p:last-child {
   padding-bottom: 3.125em; }
 
-.blog_copy ul li {
+.blog_copy ul li,
+.blog_copy ol {
   margin-left: 0.625em;
   margin-right: 1.1875em;
   font-family: "Roboto Condensed";
@@ -2339,7 +2340,8 @@ input[type=submit]:focus {
   line-height: 1.5em; }
 
 @media (min-width: 550px) {
-  .blog_copy ul li {
+  .blog_copy ul li,
+  .blog_copy ol {
     margin-left: 3.125em; } }
 
 .link_area {
