@@ -1911,6 +1911,42 @@ input[type=submit]:focus {
 .active a {
   text-decoration: none; }
 
+/*Styles for Comment Form */
+.comments {
+  margin: 0;
+  background: #ececec;
+  padding-bottom: 1.25em;
+  padding-top: 3.125em; }
+  .comments h3 {
+    margin: 0;
+    font-size: 2.25em; }
+  .comments input[type=text] {
+    color: #1f2833;
+    border: solid 0.125em #45a29e;
+    margin-left: 0.625em; }
+
+#respond {
+  margin-left: 1.25em; }
+
+#author,
+#email,
+#url {
+  background-color: #fafafa; }
+
+#comment {
+  border: solid 0.125em #45a29e;
+  margin-left: 0.625em; }
+
+.form-submit {
+  text-align: center;
+  margin: 0; }
+  .form-submit input[type=submit]:hover {
+    background-color: #fafafa;
+    color: #e44839; }
+  @media (min-width: 550px) {
+    .form-submit input[type=submit] {
+      padding: 1.25em 1.25em; } }
+
 /* #PAGES */
 /* index.html STYLES */
 /* LOGO ON HOMEPAGE FOR MOIBILE DISPLAY */

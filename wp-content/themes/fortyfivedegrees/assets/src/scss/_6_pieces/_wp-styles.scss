@@ -103,3 +103,55 @@
     }
 
 }
+
+/*Styles for Comment Form */
+.comments {
+  margin: 0;
+  background: #ececec;
+  padding-bottom: em(20px);
+  padding-top: em(50px);
+
+  h3 {
+    margin: 0;
+    font-size: em(36px);
+  }
+
+  input[type=text] {
+    color: $dark-grey;
+    border: solid 0.125em $dark-teal;
+    margin-left: em(10px);
+  }
+}
+
+#respond {
+  margin-left: em(20px);
+}
+
+#author,
+#email,
+#url
+ {
+  background-color: $white;
+}
+
+#comment {
+  border: solid 0.125em $dark-teal;
+  margin-left: em(10px);
+}
+
+.form-submit {
+  text-align: center;
+  margin: 0;
+
+  input[type=submit]:hover {
+    background-color: $white;
+    color: $red;
+  }
+
+  @include breakpoint (large-mobile) {
+
+    input[type=submit] {
+      padding: 1.25em 1.25em;
+    }
+  }
+}

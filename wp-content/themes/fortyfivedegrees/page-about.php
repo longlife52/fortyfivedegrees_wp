@@ -92,7 +92,6 @@ get_header(); ?>
         </div>
     </div> <!--closes .team_card -->
     <?php } } ?>
-
 </div> <!--close .team_wrapper -->
 
 
