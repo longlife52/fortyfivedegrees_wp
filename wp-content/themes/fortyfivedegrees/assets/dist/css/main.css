@@ -1823,6 +1823,10 @@ input[type=submit]:focus {
 
 	** Just remember, these are set up as extends and not as actual class names **
 \*------------------------------------*/
+/* styles for view-article link on home page for blog */
+.view-article {
+  display: none; }
+
 /*styles for the blog search form */
 .search {
   display: -webkit-box;
@@ -1912,21 +1916,26 @@ input[type=submit]:focus {
   text-decoration: none; }
 
 /*Styles for Comment Form */
+/* http://www.wpbeginner.com/wp-themes/how-to-style-your-wordpress-comments-layout/ */
 .comments {
   margin: 0;
   background: #ececec;
   padding-bottom: 1.25em;
   padding-top: 3.125em; }
+  .comments h2 {
+    margin-left: 1.875em; }
   .comments h3 {
     margin: 0;
     font-size: 2.25em; }
+  .comments ul {
+    list-style: none; }
   .comments input[type=text] {
     color: #1f2833;
     border: solid 0.125em #45a29e;
     margin-left: 0.625em; }
 
 #respond {
-  margin-left: 1.25em; }
+  margin-left: 2.5em; }
 
 #author,
 #email,
@@ -1938,14 +1947,56 @@ input[type=submit]:focus {
   margin-left: 0.625em; }
 
 .form-submit {
-  text-align: center;
-  margin: 0; }
+  margin-left: 4.6875em;
+  margin-top: 3.125em; }
   .form-submit input[type=submit]:hover {
     background-color: #fafafa;
     color: #e44839; }
   @media (min-width: 550px) {
     .form-submit input[type=submit] {
       padding: 1.25em 1.25em; } }
+
+.comment-body {
+  padding-bottom: 2.5em; }
+  .comment-body p {
+    margin-right: 1.25em; }
+
+.avatar {
+  border-radius: 50%;
+  padding: 0.625em; }
+
+.vcard {
+  background-color: #c5c6c7;
+  color: #fafafa;
+  margin-bottom: 1.25em; }
+  .vcard a {
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed"; }
+
+.fn,
+.says {
+  font-family: "Roboto Condensed"; }
+
+.fn {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  padding-right: 0.625em;
+  font-style: normal; }
+
+.comment-meta a {
+  text-decoration: none;
+  color: #1f2833;
+  font-family: "Roboto Condensed"; }
+
+.comment-reply-link {
+  color: #e44839;
+  font-family: "Roboto Condensed"; }
+
+#cancel-comment-reply-link {
+  color: #e44839;
+  font-size: 0.5em;
+  padding-left: 0.625em; }
 
 /* #PAGES */
 /* index.html STYLES */

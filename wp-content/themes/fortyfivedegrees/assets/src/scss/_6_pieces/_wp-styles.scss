@@ -1,3 +1,8 @@
+/* styles for view-article link on home page for blog */
+.view-article {
+  display: none;
+}
+
 /*styles for the blog search form */
 .search {
   display: flex;
@@ -105,15 +110,24 @@
 }
 
 /*Styles for Comment Form */
+/* http://www.wpbeginner.com/wp-themes/how-to-style-your-wordpress-comments-layout/ */
 .comments {
   margin: 0;
   background: #ececec;
   padding-bottom: em(20px);
   padding-top: em(50px);
 
+  h2 {
+    margin-left: em(30px);
+  }
+
   h3 {
     margin: 0;
     font-size: em(36px);
+  }
+
+  ul {
+    list-style: none;
   }
 
   input[type=text] {
@@ -124,7 +138,7 @@
 }
 
 #respond {
-  margin-left: em(20px);
+  margin-left: em(40px);
 }
 
 #author,
@@ -140,8 +154,8 @@
 }
 
 .form-submit {
-  text-align: center;
-  margin: 0;
+  margin-left: em(75px);
+  margin-top: em(50px);
 
   input[type=submit]:hover {
     background-color: $white;
@@ -154,4 +168,60 @@
       padding: 1.25em 1.25em;
     }
   }
+}
+
+.comment-body {
+  padding-bottom: em(40px);
+
+  p {
+    margin-right: em(20px);
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  padding: em(10px);
+}
+
+.vcard {
+  background-color: $light-grey;
+  color: $white;
+  margin-bottom: em(20px);
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+    font-family: $roboto;
+  }
+}
+
+.fn,
+.says {
+  font-family: $roboto;
+}
+
+.fn {
+  text-transform: uppercase;
+  font-size: em(20px);
+  padding-right: em(10px);
+  font-style: normal;
+}
+
+.comment-meta {
+  a {
+    text-decoration: none;
+    color: $dark-grey;
+    font-family: $roboto;
+  }
+}
+
+.comment-reply-link {
+  color: $red;
+  font-family: $roboto;
+}
+
+#cancel-comment-reply-link {
+  color: $red;
+  font-size: em(8px);
+  padding-left: em(10px);
 }
