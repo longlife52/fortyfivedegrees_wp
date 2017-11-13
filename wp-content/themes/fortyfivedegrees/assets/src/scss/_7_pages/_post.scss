@@ -79,10 +79,13 @@
     }
 }
 
+
 .blog_copy {
+  /*
     p:last-child {
         padding-bottom: em(50px);
     }
+*/
 
     ul li,
     ol {
@@ -104,6 +107,7 @@
     }
 }
 
+
 .link_area {
     background-color: $dark-teal;
 
@@ -116,4 +120,172 @@
     p:last-child {
         padding: 0 em(60px) em(20px) em(70px);
     }
+}
+
+.link_area_search_form {
+  margin-left: em(60px);
+}
+
+/*Styles for Comment Form */
+/* http://www.wpbeginner.com/wp-themes/how-to-style-your-wordpress-comments-layout/ */
+.comments {
+  margin: 0;
+  background: #ececec;
+  padding-bottom: em(20px);
+  padding-top: em(50px);
+
+  h2 {
+    margin-left: em(30px);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: em(36px);
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  input[type=text] {
+    color: $dark-grey;
+    border: solid 0.125em $dark-teal;
+    margin-left: em(10px);
+  }
+}
+
+#respond {
+  margin-left: em(40px);
+}
+
+#author,
+#email,
+#url
+ {
+  background-color: $white;
+}
+
+#comment {
+  border: solid 0.125em $dark-teal;
+  margin-left: em(10px);
+}
+
+.form-submit {
+  margin-left: em(75px);
+  margin-top: em(50px);
+
+  input[type=submit]:hover {
+    background-color: $white;
+    color: $red;
+  }
+
+  @include breakpoint (large-mobile) {
+
+    input[type=submit] {
+      padding: 1.25em 1.25em;
+    }
+  }
+}
+
+.comment-body {
+  padding-bottom: em(40px);
+
+  p {
+    margin-right: em(20px);
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  padding: em(10px);
+}
+
+.vcard {
+  background-color: $light-grey;
+  color: $white;
+  margin-bottom: em(20px);
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+    font-family: $roboto;
+  }
+}
+
+.fn,
+.says {
+  font-family: $roboto;
+}
+
+.fn {
+  text-transform: uppercase;
+  font-size: em(20px);
+  padding-right: em(10px);
+  font-style: normal;
+}
+
+.comment-meta {
+  a {
+    text-decoration: none;
+    color: $dark-grey;
+    font-family: $roboto;
+  }
+}
+
+.comment-reply-link {
+  color: $red;
+  font-family: $roboto;
+}
+
+#cancel-comment-reply-link {
+  color: $red;
+  font-size: em(8px);
+  padding-left: em(10px);
+}
+
+/* tag cloud widget on single.php */
+.widget_tag_cloud {
+  padding-bottom: em(40px);
+  padding-top: em(40px);
+  margin-left: em(20px);
+  margin-right: em(20px);
+
+  a {
+    color: $dark-grey;
+  }
+
+  h3 {
+    display: none;
+  }
+}
+
+.sidebar_tag {
+    border: solid $red em(2px);
+    margin: em(100px)em(5px) em(50px)em(5px);
+}
+
+@include breakpoint(large-mobile) {
+  .widget_tag_cloud {
+    margin: 0;
+  }
+
+  .tagcloud {
+    margin-left: em(50px);
+    margin-right: em(50px);
+  }
+}
+
+@include breakpoint(portrait) {
+  .sidebar_tag {
+    margin-left: em(50px);
+    margin-right: em(50px);
+  }
+}
+
+
+@include breakpoint(medium) {
+  .sidebar_tag {
+    margin-left: em(200px);
+    margin-right: em(200px);
+  }
 }

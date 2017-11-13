@@ -1829,14 +1829,6 @@ input[type=submit]:focus {
 
 /*styles for the blog search form */
 .search {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding-bottom: 2em;
   padding-top: 2em; }
 
@@ -1848,6 +1840,16 @@ input[type=submit]:focus {
   color: white;
   padding: 0 0.625em 0 0.625em;
   font-size: 1.125em; }
+
+.search_blog {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 /* styles for related posts on single.php" */
 .links {
@@ -1914,89 +1916,6 @@ input[type=submit]:focus {
 
 .active a {
   text-decoration: none; }
-
-/*Styles for Comment Form */
-/* http://www.wpbeginner.com/wp-themes/how-to-style-your-wordpress-comments-layout/ */
-.comments {
-  margin: 0;
-  background: #ececec;
-  padding-bottom: 1.25em;
-  padding-top: 3.125em; }
-  .comments h2 {
-    margin-left: 1.875em; }
-  .comments h3 {
-    margin: 0;
-    font-size: 2.25em; }
-  .comments ul {
-    list-style: none; }
-  .comments input[type=text] {
-    color: #1f2833;
-    border: solid 0.125em #45a29e;
-    margin-left: 0.625em; }
-
-#respond {
-  margin-left: 2.5em; }
-
-#author,
-#email,
-#url {
-  background-color: #fafafa; }
-
-#comment {
-  border: solid 0.125em #45a29e;
-  margin-left: 0.625em; }
-
-.form-submit {
-  margin-left: 4.6875em;
-  margin-top: 3.125em; }
-  .form-submit input[type=submit]:hover {
-    background-color: #fafafa;
-    color: #e44839; }
-  @media (min-width: 550px) {
-    .form-submit input[type=submit] {
-      padding: 1.25em 1.25em; } }
-
-.comment-body {
-  padding-bottom: 2.5em; }
-  .comment-body p {
-    margin-right: 1.25em; }
-
-.avatar {
-  border-radius: 50%;
-  padding: 0.625em; }
-
-.vcard {
-  background-color: #c5c6c7;
-  color: #fafafa;
-  margin-bottom: 1.25em; }
-  .vcard a {
-    color: #fafafa;
-    text-transform: uppercase;
-    font-family: "Roboto Condensed"; }
-
-.fn,
-.says {
-  font-family: "Roboto Condensed"; }
-
-.fn {
-  text-transform: uppercase;
-  font-size: 1.25em;
-  padding-right: 0.625em;
-  font-style: normal; }
-
-.comment-meta a {
-  text-decoration: none;
-  color: #1f2833;
-  font-family: "Roboto Condensed"; }
-
-.comment-reply-link {
-  color: #e44839;
-  font-family: "Roboto Condensed"; }
-
-#cancel-comment-reply-link {
-  color: #e44839;
-  font-size: 0.5em;
-  padding-left: 0.625em; }
 
 /* #PAGES */
 /* index.html STYLES */
@@ -2413,23 +2332,24 @@ input[type=submit]:focus {
     padding-top: 3.125em;
     margin-left: 10px; } }
 
-.blog_copy p:last-child {
-  padding-bottom: 3.125em; }
-
-.blog_copy ul li,
-.blog_copy ol {
-  margin-left: 0.625em;
-  margin-right: 1.1875em;
-  font-family: "Roboto Condensed";
-  font-size: 1.25em; }
-
-.blog_copy li {
-  line-height: 1.5em; }
-
-@media (min-width: 550px) {
+.blog_copy {
+  /*
+    p:last-child {
+        padding-bottom: em(50px);
+    }
+*/ }
   .blog_copy ul li,
   .blog_copy ol {
-    margin-left: 3.125em; } }
+    margin-left: 0.625em;
+    margin-right: 1.1875em;
+    font-family: "Roboto Condensed";
+    font-size: 1.25em; }
+  .blog_copy li {
+    line-height: 1.5em; }
+  @media (min-width: 550px) {
+    .blog_copy ul li,
+    .blog_copy ol {
+      margin-left: 3.125em; } }
 
 .link_area {
   background-color: #45a29e; }
@@ -2439,3 +2359,121 @@ input[type=submit]:focus {
     padding: 1.875em 3.75em 0 3.75em; }
   .link_area p:last-child {
     padding: 0 3.75em 1.25em 4.375em; }
+
+.link_area_search_form {
+  margin-left: 3.75em; }
+
+/*Styles for Comment Form */
+/* http://www.wpbeginner.com/wp-themes/how-to-style-your-wordpress-comments-layout/ */
+.comments {
+  margin: 0;
+  background: #ececec;
+  padding-bottom: 1.25em;
+  padding-top: 3.125em; }
+  .comments h2 {
+    margin-left: 1.875em; }
+  .comments h3 {
+    margin: 0;
+    font-size: 2.25em; }
+  .comments ul {
+    list-style: none; }
+  .comments input[type=text] {
+    color: #1f2833;
+    border: solid 0.125em #45a29e;
+    margin-left: 0.625em; }
+
+#respond {
+  margin-left: 2.5em; }
+
+#author,
+#email,
+#url {
+  background-color: #fafafa; }
+
+#comment {
+  border: solid 0.125em #45a29e;
+  margin-left: 0.625em; }
+
+.form-submit {
+  margin-left: 4.6875em;
+  margin-top: 3.125em; }
+  .form-submit input[type=submit]:hover {
+    background-color: #fafafa;
+    color: #e44839; }
+  @media (min-width: 550px) {
+    .form-submit input[type=submit] {
+      padding: 1.25em 1.25em; } }
+
+.comment-body {
+  padding-bottom: 2.5em; }
+  .comment-body p {
+    margin-right: 1.25em; }
+
+.avatar {
+  border-radius: 50%;
+  padding: 0.625em; }
+
+.vcard {
+  background-color: #c5c6c7;
+  color: #fafafa;
+  margin-bottom: 1.25em; }
+  .vcard a {
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed"; }
+
+.fn,
+.says {
+  font-family: "Roboto Condensed"; }
+
+.fn {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  padding-right: 0.625em;
+  font-style: normal; }
+
+.comment-meta a {
+  text-decoration: none;
+  color: #1f2833;
+  font-family: "Roboto Condensed"; }
+
+.comment-reply-link {
+  color: #e44839;
+  font-family: "Roboto Condensed"; }
+
+#cancel-comment-reply-link {
+  color: #e44839;
+  font-size: 0.5em;
+  padding-left: 0.625em; }
+
+/* tag cloud widget on single.php */
+.widget_tag_cloud {
+  padding-bottom: 2.5em;
+  padding-top: 2.5em;
+  margin-left: 1.25em;
+  margin-right: 1.25em; }
+  .widget_tag_cloud a {
+    color: #1f2833; }
+  .widget_tag_cloud h3 {
+    display: none; }
+
+.sidebar_tag {
+  border: solid #e44839 0.125em;
+  margin: 6.25em 0.3125em 3.125em 0.3125em; }
+
+@media (min-width: 550px) {
+  .widget_tag_cloud {
+    margin: 0; }
+  .tagcloud {
+    margin-left: 3.125em;
+    margin-right: 3.125em; } }
+
+@media (min-width: 750px) {
+  .sidebar_tag {
+    margin-left: 3.125em;
+    margin-right: 3.125em; } }
+
+@media (min-width: 900px) {
+  .sidebar_tag {
+    margin-left: 12.5em;
+    margin-right: 12.5em; } }

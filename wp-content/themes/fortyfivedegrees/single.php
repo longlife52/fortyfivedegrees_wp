@@ -30,11 +30,14 @@
     </div> <!-- close of body copy -->
 </div> <!--close of blog content-->
 
+<div class="sidebar_tag">
+  <?php get_sidebar(); ?>
+</div>
+
 <div id="pagination">
+    <div class="prev_post"><?php previous_post_link('%link', '<< Previous Post') ?></div>
 
-  <div class="prev_post"><?php previous_post_link('%link', '<< Previous Post') ?></div>
-
-  <div class="next_post"><?php next_post_link('%link', 'Next Post >>') ?></div><br clear="both" />
+    <div class="next_post"><?php next_post_link('%link', 'Next Post >>') ?></div><br clear="both" />
 </div>
 
 <!-- LINKS TO OTHER BLOG ARTICLES -->
@@ -48,7 +51,7 @@
       $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 5, 'post__not_in' => array($post->ID) ) );
       if( $related ) foreach( $related as $post ) {
       setup_postdata($post); ?>
-       <ul>
+          <ul>
               <li>
               <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
               </li>
@@ -56,7 +59,10 @@
       <?php }
       wp_reset_postdata(); ?>
 
-    </div>
+          <div class="link_area_search_form">
+          <?php get_template_part('partials/searchform'); ?>
+          </div>
+      </div> <!--  end .links -->
 </div>
 
 <?php endwhile; endif; ?>

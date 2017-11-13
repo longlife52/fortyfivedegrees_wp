@@ -56,7 +56,9 @@
             <a href="/archive.php"><p class="ghost_button ghost_btn_white">Blog Archive</p></a>
         </div>
 
+        <div class="search_blog">
         <?php get_template_part('partials/searchform'); ?>
+        </div>
 
     </div>
 

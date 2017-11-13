@@ -3,10 +3,10 @@
   display: none;
 }
 
+
+
 /*styles for the blog search form */
 .search {
-  display: flex;
-  justify-content: center;
   padding-bottom: 2em;
   padding-top: 2em;
 }
@@ -20,6 +20,11 @@
   color: white;
   padding: 0 em(10px) 0 em(10px);
   font-size: em(18px);
+}
+
+.search_blog {
+  display: flex;
+  justify-content: center;
 }
 
 /* styles for related posts on single.php" */
@@ -107,121 +112,4 @@
       text-decoration: none;
     }
 
-}
-
-/*Styles for Comment Form */
-/* http://www.wpbeginner.com/wp-themes/how-to-style-your-wordpress-comments-layout/ */
-.comments {
-  margin: 0;
-  background: #ececec;
-  padding-bottom: em(20px);
-  padding-top: em(50px);
-
-  h2 {
-    margin-left: em(30px);
-  }
-
-  h3 {
-    margin: 0;
-    font-size: em(36px);
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  input[type=text] {
-    color: $dark-grey;
-    border: solid 0.125em $dark-teal;
-    margin-left: em(10px);
-  }
-}
-
-#respond {
-  margin-left: em(40px);
-}
-
-#author,
-#email,
-#url
- {
-  background-color: $white;
-}
-
-#comment {
-  border: solid 0.125em $dark-teal;
-  margin-left: em(10px);
-}
-
-.form-submit {
-  margin-left: em(75px);
-  margin-top: em(50px);
-
-  input[type=submit]:hover {
-    background-color: $white;
-    color: $red;
-  }
-
-  @include breakpoint (large-mobile) {
-
-    input[type=submit] {
-      padding: 1.25em 1.25em;
-    }
-  }
-}
-
-.comment-body {
-  padding-bottom: em(40px);
-
-  p {
-    margin-right: em(20px);
-  }
-}
-
-.avatar {
-  border-radius: 50%;
-  padding: em(10px);
-}
-
-.vcard {
-  background-color: $light-grey;
-  color: $white;
-  margin-bottom: em(20px);
-
-  a {
-    color: $white;
-    text-transform: uppercase;
-    font-family: $roboto;
-  }
-}
-
-.fn,
-.says {
-  font-family: $roboto;
-}
-
-.fn {
-  text-transform: uppercase;
-  font-size: em(20px);
-  padding-right: em(10px);
-  font-style: normal;
-}
-
-.comment-meta {
-  a {
-    text-decoration: none;
-    color: $dark-grey;
-    font-family: $roboto;
-  }
-}
-
-.comment-reply-link {
-  color: $red;
-  font-family: $roboto;
-}
-
-#cancel-comment-reply-link {
-  color: $red;
-  font-size: em(8px);
-  padding-left: em(10px);
 }
