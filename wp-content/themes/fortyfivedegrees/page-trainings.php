@@ -13,7 +13,7 @@ get_header(); ?>
             </div>
 
         <div class="center-text button-box">
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_teal"><?php the_field('billboard_button_label'); ?></p></a>
+            <a href="<?php the_field('billboard_button_link'); ?>" target="blank" class="strip"><p class="ghost_button ghost_btn_teal"><?php the_field('billboard_button_label'); ?></p></a>
         </div>
     </div> <!--closer for .billboard_black -->
 </div> <!-- close .billboard_black_wrapper-->

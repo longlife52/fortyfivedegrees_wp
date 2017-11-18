@@ -83,8 +83,8 @@ get_header(); ?>
     <div class="team_card">
         <div class="team_image">
 
-          <?php $team_bios['image'] = get_field('image');
-          if( !empty($team_bios['image']) ): ?>
+          <?php $image = get_field('');
+          if( !empty($image) ): ?>
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="content_img" />
           <?php endif; ?>
 
