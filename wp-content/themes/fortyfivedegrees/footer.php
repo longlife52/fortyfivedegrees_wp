@@ -7,7 +7,7 @@
             <p>We'll help you go farther.</p>
 
             <div class="center-text button-box">
-                <a href="mailto:garrisonridge@gmail.com"><p class="ghost_button ghost_btn_teal">CONTACT</p></a>
+                <a href="mailto:<?php the_field('billboard_button_link'); ?>"><p class="ghost_button ghost_btn_teal">CONTACT</p></a>
             </div>
 
             <h4>SIGN UP FOR OUR NEWSLETTER</h4>
@@ -18,7 +18,7 @@
 
             <?php get_template_part ('partials/social_media'); ?>
 
-            <p class="copyright">&copy <?= date('Y'); ?> 45 Degrees</p>
+            <p class="copyright"> Copyright <?= date('Y'); ?> </p>
 
             <div class="legal">
               <ul>
