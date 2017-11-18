@@ -30,7 +30,7 @@
               <p> <?php the_excerpt(); ?></p>
               <a href="<?php the_permalink(); ?>">
                   <div class="blog_list_button">
-                        <button class="btn_red">Read More &gt&gt</button>
+                        <button class="btn_red">Read More</button>
                   </div>
               </a>
           </div>

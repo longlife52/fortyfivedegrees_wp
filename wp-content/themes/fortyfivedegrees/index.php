@@ -49,17 +49,16 @@
       <em>No Posts Found</em>
     <?php endif; ?>
 
+    <div class="search_blog">
+    <?php get_template_part('partials/searchform'); ?>
+    </div>
+
 <!-- BILLBOARD CALL TO ACTION  -->
     <div class="billboard_teal">
         <h2><?php the_field('action_heading', 13); ?></h2>
         <div class="center-text button-box">
-            <a href="/archive.php"><p class="ghost_button ghost_btn_white">Blog Archive</p></a>
+            <a href="<?php the_field('action_button_link', 13); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('action_button_label', 13); ?></p></a>
         </div>
-
-        <div class="search_blog">
-        <?php get_template_part('partials/searchform'); ?>
-        </div>
-
     </div>
 
 <?php get_footer(); ?>

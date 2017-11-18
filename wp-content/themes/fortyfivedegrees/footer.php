@@ -14,17 +14,6 @@
 
             <div class="form-area">
               <?= do_shortcode('[contact-form-7 id="96" title="Contact form 1" html_class="flex-form" html_id="newsletter"]'); ?>
-              <!--
-                <form class="flex-form" id="newsletter" method="post" action="mailto:garrisonridge@gmail.com">
-                    <label for="name"></label>
-                    <input type="text"  name="name" placeholder="FirstName">
-
-                    <label for="email"></label>
-                    <input type="text"  name="email" placeholder="Email Address">
-
-                    <input type="submit" value="SIGN UP" class="submit_hover">
-                </form>
-              -->
             </div> <!-- close form-area -->
 
             <?php get_template_part ('partials/social_media'); ?>
