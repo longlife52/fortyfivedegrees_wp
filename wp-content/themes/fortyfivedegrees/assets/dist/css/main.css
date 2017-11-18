@@ -2271,6 +2271,10 @@ input[type=submit]:focus {
 .workshop_button {
   margin-top: 3.125em; }
 
+/* BLOCK QUOTE */
+blockquote {
+  color: #45a29e; }
+
 /* INDIVIDUAL BLOG POST */
 .blog_title h1 {
   font-size: 3.125em;
@@ -2451,7 +2455,8 @@ input[type=submit]:focus {
   padding-bottom: 2.5em;
   padding-top: 2.5em;
   margin-left: 1.25em;
-  margin-right: 1.25em; }
+  margin-right: 1.25em;
+  font-family: "Roboto Condensed"; }
   .widget_tag_cloud a {
     color: #1f2833; }
   .widget_tag_cloud h3 {

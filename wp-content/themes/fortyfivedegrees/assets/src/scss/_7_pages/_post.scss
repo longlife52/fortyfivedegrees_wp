@@ -1,3 +1,8 @@
+/* BLOCK QUOTE */
+blockquote {
+  color: $dark-teal;
+}
+
 /* INDIVIDUAL BLOG POST */
 .blog_title {
 
@@ -249,6 +254,7 @@
   padding-top: em(40px);
   margin-left: em(20px);
   margin-right: em(20px);
+  font-family: $roboto;
 
   a {
     color: $dark-grey;
