@@ -2178,6 +2178,25 @@ input[type=submit]:focus {
     padding-top: 2em; } }
 
 /* WORKSHOPS */
+.sell_title {
+  display: none;
+  color: #fafafa;
+  font-size: 3em; }
+  @media (min-width: 750px) {
+    .sell_title {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      top: 1.875em;
+      left: 1.25em; } }
+  @media (min-width: 1000px) {
+    .sell_title {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      top: 2.5em;
+      left: 2.5em; } }
+
 .btn_pullup {
   display: none; }
   @media (min-width: 750px) {
@@ -2185,15 +2204,15 @@ input[type=submit]:focus {
       display: block;
       position: absolute;
       z-index: 100;
-      top: 16.25em;
-      left: 4.375em; } }
+      top: 10em;
+      left: 5.625em; } }
   @media (min-width: 1000px) {
     .btn_pullup {
       display: block;
       position: absolute;
       z-index: 100;
-      top: 25em;
-      left: 12.5em; } }
+      top: 11.25em;
+      left: 8.75em; } }
 
 .workshop {
   padding: 5em 0 5em 0;

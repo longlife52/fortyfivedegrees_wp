@@ -1,4 +1,28 @@
 /* WORKSHOPS */
+
+.sell_title {
+  display: none;
+  color: $white;
+  font-size: 3em;
+
+  @include breakpoint (portrait) {
+
+      display: block;
+      position: absolute;
+      z-index: 100;
+      top: em(30px);
+      left: em(20px);
+  }
+
+  @include breakpoint (landscape) {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      top: em(40px);
+      left: em(40px);
+  }
+
+}
 .btn_pullup {
     display: none;
 
@@ -6,8 +30,8 @@
         display: block;
         position: absolute;
         z-index: 100;
-        top: em(260px);
-        left: em(70px);
+        top: em(160px);
+        left: em(90px);
     }
 
 
@@ -15,8 +39,8 @@
         display: block;
         position: absolute;
         z-index: 100;
-        top: em(400px);
-        left: em(200px);
+        top: em(180px);
+        left: em(140px);
     }
 }
 

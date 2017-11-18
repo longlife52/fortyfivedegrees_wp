@@ -11,13 +11,13 @@
       <?php endif; ?>
     </div>
 
-    <div>
-      <h2><?php the_field('sell_title'); ?></h2>
-    </div>
+      <div>
+        <h2 class="sell_title"><?php the_field('sell_title'); ?></h2>
+      </div>
 
-    <div class="button-box btn_pullup">
-        <a href="<?php the_field('sell_button_link'); ?>" target="blank"><p class="ghost_button ghost_btn_white"><?php the_field('sell_button_label'); ?></p></a>
-    </div>
+      <div class="button-box btn_pullup">
+          <a href="<?php the_field('sell_button_link'); ?>" target="blank"><p class="ghost_button ghost_btn_white"><?php the_field('sell_button_label'); ?></p></a>
+      </div>
 </div>
 
 <!-- WORKSHOP DETAILS -->
