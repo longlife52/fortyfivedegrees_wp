@@ -42,7 +42,7 @@
 
 <!-- LINKS TO OTHER BLOG ARTICLES -->
 <div class="link_area link_white">
-    <h3>Learn More Ways to Get Clear </h3>
+    <h3><?php the_field('related_posts_title'); ?></h3>
 
     <div class="links">
       <!-- code from https://wordpress.stackexchange.com/questions/41272/how-to-show-related-posts-by-category -->

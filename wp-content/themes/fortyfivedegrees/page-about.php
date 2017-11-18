@@ -82,7 +82,15 @@ get_header(); ?>
     foreach ($teamBios as $team_bios) { ?>
     <div class="team_card">
         <div class="team_image">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/diane.jpg" alt="Diane Overgard" title="Diane Overgard">
+
+          <?php $team_bios['image'] = get_field('image');
+          if( !empty($team_bios['image']) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="content_img" />
+          <?php endif; ?>
+
+          <!--
+            <img src="">
+          -->
             <h2><?= $team_bios['name']; ?></h2>
             <h3><?= $team_bios['title']; ?></h3>
         </div>
