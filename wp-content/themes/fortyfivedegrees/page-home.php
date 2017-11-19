@@ -122,7 +122,7 @@ if( !empty($image) ): ?>
                   </div>
                   <a href="<?php the_permalink(); ?>">
                       <div class="card-three__read-more">
-                          <button class="btn_red">Read More &gt&gt</button>
+                          <button class="btn_red">Read More</button>
                       </div>
                   </a>
               </div>
