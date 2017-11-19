@@ -70,14 +70,23 @@ if( !empty($image) ): ?>
 
 
 <!-- TESTIMONIAL SLIDER -->
+<?php $query = new WP_Query( array (
+    'posts_per_page' => '-1',//-1 shows all posts
+    'post_type' => 'testimonial'
+  ));
+  if ($query->have_posts()) : ?>
+
   <div class="carousel_wrapper"> <!-- black background for carousel -->
 
       <!-- quote mark -->
       <div class="carousel_quote_mark">
           <img class="image_full" src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.png" alt="quote mark" title="quote mark">
       </div>
-      <!-- owl carousel -->
+
+      <!-- owl carousel for TESTIMONIALS -->
       <div class="owl-carousel owl-theme owl-loaded carousel_space">
+
+      <?php while ($query->have_posts()) : $query->the_post(); ?>
           <!--testimonial one -->
         <div class="testimonial_content">
             <p class="testimonial_words"><?php the_field('testimonial_words'); ?>
@@ -87,9 +96,10 @@ if( !empty($image) ): ?>
 
             <h3 class="testimonial_title"><?php the_field('testimonial_title'); ?></h3>
         </div> <!-- close testimonial content 1 -->
-
+        <?php endwhile; ?>
       </div> <!-- close owl carousel -->
     </div> <!--  close black background for carousel-->
+    <?php endif; ?>
 
 <!-- BLOG CARDS -->
 <?php $query = new WP_Query( array (
