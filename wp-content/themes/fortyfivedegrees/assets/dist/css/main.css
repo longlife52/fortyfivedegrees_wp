@@ -1917,6 +1917,26 @@ input[type=submit]:focus {
 .active a {
   text-decoration: none; }
 
+/* SEARCH RESULTS PAGE STYLES */
+.search_results_page {
+  padding-top: 1.25em; }
+
+.center_search_results_title {
+  text-align: center; }
+
+.page-numbers {
+  font-family: "Roboto Condensed";
+  padding-right: 0.625em; }
+
+.pagination {
+  padding-top: 3.125em;
+  padding-bottom: 3.125em;
+  padding-left: 1.25em; }
+
+.status-publish,
+.has-post-thumbnail {
+  padding-left: 1.25em; }
+
 /* #PAGES */
 /* index.html STYLES */
 /* LOGO ON HOMEPAGE FOR MOIBILE DISPLAY */

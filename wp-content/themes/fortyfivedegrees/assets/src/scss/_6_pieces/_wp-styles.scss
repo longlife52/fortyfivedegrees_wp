@@ -3,8 +3,6 @@
   display: none;
 }
 
-
-
 /*styles for the blog search form */
 .search {
   padding-bottom: 2em;
@@ -112,4 +110,30 @@
       text-decoration: none;
     }
 
+}
+
+/* SEARCH RESULTS PAGE STYLES */
+
+.search_results_page {
+  padding-top: em(20px);
+}
+
+.center_search_results_title {
+  text-align: center;
+}
+
+.page-numbers {
+  font-family: $roboto;
+  padding-right: em(10px);
+}
+
+.pagination {
+  padding-top: em(50px);
+  padding-bottom: em(50px);
+  padding-left: em(20px);
+}
+
+.status-publish,
+.has-post-thumbnail {
+  padding-left: em(20px);
 }
