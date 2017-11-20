@@ -1411,7 +1411,7 @@ input[type=text] {
 
 input[type=email] {
   background-color: #0b0c10;
-  color: white;
+  color: #fafafa;
   font-size: 1em;
   border: solid 0.125em #66fcf1;
   padding: 1.25em 0 1.25em 0.625em;
