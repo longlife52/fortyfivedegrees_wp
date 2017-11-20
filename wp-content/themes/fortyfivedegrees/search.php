@@ -4,7 +4,7 @@
   <!-- section -->
     <section >
 
-<div class="search_results_page">
+<div class="search_results_page" id="search-results-page">
       <div>
         <h1 class="center_search_results_title"><?php echo sprintf( __( '%s Search Results for ', 'html5blank' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
       <div>
