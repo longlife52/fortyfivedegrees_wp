@@ -1,3 +1,20 @@
+NOTE: I have added to this README with my project notes for future developers.  I chose to save Amy's notes listed below for future reference.
+
+45 Degrees website details
+
+- WordPress
+- Sass
+- Plugins inlcude the following
+Contact Form 7
+Contact Form 7 Database
+Search Everything
+Visual Editor Custom Buttons
+Advanced Customs Fields Project
+Akismet Anti-Spam
+BackUp WordPress
+Word Fence
+iThemes Security
+W3 Total Cache
 
 # ahha-susy
 
