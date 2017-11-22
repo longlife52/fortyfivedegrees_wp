@@ -65,9 +65,6 @@ get_header(); ?>
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="content_img" />
           <?php endif; ?>
 
-          <!--
-            <img src="">
-          -->
             <h2><?= $team_bios['name']; ?></h2>
             <h3><?= $team_bios['title']; ?></h3>
         </div>
